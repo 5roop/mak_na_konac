@@ -26,3 +26,5 @@ for p in [Path("data/Pescanik_STT/221219/221219.exb")]:
     t = p.read_text()
     t = t.replace('<referenced-file url="Pozdrav%20za%20Borču.mp3"/>', '<referenced-file url="221219.mp3"/>')
     p.write_text(t)
+
+subprocess.run(["snakemake", "-j", "5"], check=True)
