@@ -1,0 +1,38 @@
+from pathlib import Path
+import subprocess
+
+def prune_excel(inpath, outpath):
+    import pandas as pd
+    df = pd.read_excel(inpath)
+    if "emisija" not in df.columns:
+        df = pd.read_excel(inpath, names="emisija start end govornik".split())
+    df["start"] = df.start.str.rstrip().str.lstrip()
+    df["end"] = df.end.str.rstrip().str.lstrip()
+    df.to_excel(outpath, index=False)
+
+
+all_ids = [i.name for i in Path("data/Pescanik_STT/").glob('[0-9]' * 6)]
+print("All ids:", all_ids)
+
+rule gather:
+    default_target: True
+    input: expand("data/Pescanik_STT/{num}/{num}.wav", num=all_ids)
+    run:
+        for idx in all_ids:
+            p = Path(f"data/Pescanik_STT/{idx}/{idx}.exb".replace(" ", ""))
+            t = p.read_text()
+            t = t.replace(f"{idx}.mp3", f"{idx}.wav")
+            p.write_text(t)
+            p = p.with_suffix(".xlsx")
+            prune_excel(p, p)
+
+
+rule transform_wav:
+    input: "data/Pescanik_STT/{num}/{num}.mp3"
+    output: "data/Pescanik_STT/{num}/{num}.wav"
+    threads: 5
+    shell:
+        """
+        ffmpeg -i {input} -ac 1 -ar 16000 -acodec pcm_s16le {output};
+        rm {input}
+        """
