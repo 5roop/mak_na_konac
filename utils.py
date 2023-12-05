@@ -185,6 +185,8 @@ def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> None
         df["join_with"] = [list() for i in range(df.shape[0])]
         df["to_skip"] = ""
         df["continues"] = df.start.shift(-1) == df.end
+        df["terminates_merge_badly"] = False
+        df["new_bad"] = df.bad.values
         skip_indices = []
         for i, row in df.iterrows():
             if i in skip_indices:
@@ -197,12 +199,15 @@ def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> None
             if row["bad"]:
                 df.loc[i, "join_with"].append(i + 1)
                 skip_indices.append(i + 1)
-
+                df.loc[i, "new_bad"] = ""
                 if not (i + 2 < df.shape[0]):
                     continue
-                if df.loc[i + 2, "bad"] and df.loc[i + 1, "continues"]:
+                if df.loc[i + 1, "bad"] and df.loc[i + 1, "continues"]:
                     df.loc[i, "join_with"].append(i + 2)
+                    df.loc[i + 1, "new_bad"] = ""
                     skip_indices.append(i + 2)
+                    if df.loc[i + 2, "bad"]:
+                        df.loc[i + 2, "terminates_merge_badly"] = True
         df["to_skip"] = df.index.isin(skip_indices)
         for i, row in df.iterrows():
             if row["to_skip"]:
@@ -227,9 +232,7 @@ def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> None
             newevent.set(
                 "end_s", df.loc[new_element_bounds, "end_s"].astype(str).values[-1]
             )
-            newevent.text = " ".join(df.loc[new_element_bounds, "text"].values).replace(
-                "  ", " "
-            )
+            newevent.text = " ".join(df.loc[new_element_bounds, "text"].values)
             tier.insert(start_index, newevent)
         tier[:] = sorted(tier, key=lambda child: float(child.get("start_s")))
         dfs.append(df)
@@ -240,12 +243,13 @@ def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> None
         newtier.set(key, value)
     newtier.set("id", "bad_segments")
     newtier.set("display-name", "bad segments")
-    for i, row in df[(df.bad == "bad") & (df.join_with.apply(bool))].iterrows():
-        event = ET.Element("event")
-        event.set("start", row["start"])
-        event.set("end", row["end"])
-        event.text = "bad ->"
-        newtier.append(event)
+    for i, row in df.iterrows():
+        if row["new_bad"]:
+            event = ET.Element("event")
+            event.set("start", row["start"])
+            event.set("end", row["end"])
+            event.text = "bad ->"
+            newtier.append(event)
     tier.addnext(newtier)
     ET.indent(doc, space="\t")
     doc.getroottree().write(

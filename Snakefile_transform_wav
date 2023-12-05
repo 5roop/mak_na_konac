@@ -30,7 +30,7 @@ rule gather:
 rule transform_wav:
     input: "data/Pescanik_STT/{num}/{num}.mp3"
     output: "data/Pescanik_STT/{num}/{num}.wav"
-    threads: 5
+    threads: 20
     shell:
         """
         ffmpeg -i {input} -ac 1 -ar 16000 -acodec pcm_s16le {output};
