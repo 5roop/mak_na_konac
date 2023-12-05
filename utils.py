@@ -5,36 +5,39 @@ from scipy.io import wavfile
 import pandas as pd
 import numpy as np
 import snakemake
+import logging
 
 
 class FishyInputError(Exception):
     pass
 
 
-def get_excel(path: str):
-    df = read_excel(path)
-    if df.shape[1] == 3:
-        raise FishyInputError("There seem to be only 3 columns, expected 4.")
-    if "emisija" not in df.columns:
-        df = read_excel(path, names="emisija start end govornik".split(), header=None)
+# def get_excel(path: str):
+#     from pandas import read_excel
 
-    exbpath = Path(path).with_suffix(".exb")
-    df["start"] = df.start.str.rstrip().str.lstrip()
-    df["end"] = df.end.str.rstrip().str.lstrip()
-    timeline = get_timestamps_from_exb(exbpath)
-    starts = [timeline.get(i) for i in df.start]
-    ends = [timeline.get(i) for i in df.end]
-    df["start_s"] = starts
-    df["end_s"] = ends
+#     df = read_excel(path)
+#     if df.shape[1] == 3:
+#         raise FishyInputError("There seem to be only 3 columns, expected 4.")
+#     if "emisija" not in df.columns:
+#         df = read_excel(path, names="emisija start end govornik".split(), header=None)
 
-    if "150918" in str(path):
-        c = df.index.isin([65, 66])
-        df = df[~c]
-        logging.warning(f"Skipping the weird {c.sum()} lines for 150918 as agreed")
-    assert not df.start_s.isna().any(), "Missing values in start_s"
-    assert not df.end_s.isna().any(), "Missing values in end_s"
-    assert (df.end_s > df.start_s).all(), "Segments start after they end"
-    return df
+#     exbpath = Path(path).with_suffix(".exb")
+#     df["start"] = df.start.str.rstrip().str.lstrip()
+#     df["end"] = df.end.str.rstrip().str.lstrip()
+#     timeline = get_timestamps_from_exb(exbpath)
+#     starts = [timeline.get(i) for i in df.start]
+#     ends = [timeline.get(i) for i in df.end]
+#     df["start_s"] = starts
+#     df["end_s"] = ends
+
+#     if "150918" in str(path):
+#         c = df.index.isin([65, 66])
+#         df = df[~c]
+#         logging.warning(f"Skipping the weird {c.sum()} lines for 150918 as agreed")
+#     assert not df.start_s.isna().any(), "Missing values in start_s"
+#     assert not df.end_s.isna().any(), "Missing values in end_s"
+#     assert (df.end_s > df.start_s).all(), "Segments start after they end"
+#     return df
 
 
 def process_file_label_only(inpath: Path | str, outpath: Path | str) -> None:
