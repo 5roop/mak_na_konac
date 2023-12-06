@@ -5,12 +5,17 @@ import subprocess
 all_ids = [i.name for i in Path("data/Pescanik_STT_labelled_and_merged/").glob('[0-9]' * 6)]
 
 rule gather:
-    input: expand("data/Pescanik_STT_labelled_and_merged/{num}/{num}.exb", num=all_ids)
+    input: expand("data/Pescanik_STT_labelled_and_merged/{num}/{num}.{suffix}", num=all_ids, suffix={"exb", "xlsx"})
 
-rule process:
-    input: "data/Pescanik_STT/{num}/{num}.exb"
-    output: "data/Pescanik_STT_labelled_and_merged/{num}/{num}.exb"
+rule process_exb:
+    input: 
+        exb="data/Pescanik_STT/{num}/{num}.exb",
+        xlsx="data/Pescanik_STT/{num}/{num}.xlsx",
+    output:
+        exb="data/Pescanik_STT_labelled_and_merged/{num}/{num}.exb",
+        xlsx="data/Pescanik_STT_labelled_and_merged/{num}/{num}.xlsx",
     run:
-        from utils import process_file_join_and_label
-        process_file_join_and_label(input[0], output[0])
-        Path(output[0]).write_text(Path(output[0]).read_text().replace(wildcards.num+".mp3", wildcards.num+".wav"))
+        from utils import process_file_join_and_label, fix_excel
+        history = process_file_join_and_label(input.exb, output.exb)
+        fix_excel(input.xlsx, output.xlsx, history)
+        Path(output.exb).write_text(Path(output.exb).read_text().replace(wildcards.num+".mp3", wildcards.num+".wav"))

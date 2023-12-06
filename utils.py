@@ -12,32 +12,25 @@ class FishyInputError(Exception):
     pass
 
 
-# def get_excel(path: str):
-#     from pandas import read_excel
+def fix_excel(inpath: str, outpath: str, history: list[dict]):
+    from pandas import read_excel
 
-#     df = read_excel(path)
-#     if df.shape[1] == 3:
-#         raise FishyInputError("There seem to be only 3 columns, expected 4.")
-#     if "emisija" not in df.columns:
-#         df = read_excel(path, names="emisija start end govornik".split(), header=None)
+    df = read_excel(inpath)
+    if df.shape[1] == 3:
+        raise FishyInputError("There seem to be only 3 columns, expected 4.")
+    if "emisija" not in df.columns:
+        df = read_excel(inpath, names="emisija start end govornik".split(), header=None)
 
-#     exbpath = Path(path).with_suffix(".exb")
-#     df["start"] = df.start.str.rstrip().str.lstrip()
-#     df["end"] = df.end.str.rstrip().str.lstrip()
-#     timeline = get_timestamps_from_exb(exbpath)
-#     starts = [timeline.get(i) for i in df.start]
-#     ends = [timeline.get(i) for i in df.end]
-#     df["start_s"] = starts
-#     df["end_s"] = ends
-
-#     if "150918" in str(path):
-#         c = df.index.isin([65, 66])
-#         df = df[~c]
-#         logging.warning(f"Skipping the weird {c.sum()} lines for 150918 as agreed")
-#     assert not df.start_s.isna().any(), "Missing values in start_s"
-#     assert not df.end_s.isna().any(), "Missing values in end_s"
-#     assert (df.end_s > df.start_s).all(), "Segments start after they end"
-#     return df
+    for i, row in df.iterrows():
+        for mapper in history:
+            if not (
+                (mapper["old_start"] == row["start"])
+                and (mapper["old_end"] == row["end"])
+            ):
+                continue
+            df.loc[i, "start"] = mapper["new_start"]
+            df.loc[i, "end"] = mapper["new_end"]
+    df.drop_duplicates().to_excel(outpath, index=False)
 
 
 def process_file_label_only(inpath: Path | str, outpath: Path | str) -> None:
@@ -127,7 +120,8 @@ def process_file_label_only(inpath: Path | str, outpath: Path | str) -> None:
     )
 
 
-def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> None:
+def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> list:
+    history = []
     inpath = Path(inpath)
     audio_path = inpath.with_suffix(".wav")
     audio = AudioSegment.from_wav(audio_path)
@@ -215,6 +209,8 @@ def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> None
             if not row["join_with"]:
                 continue
             new_element_bounds = [i] + row["join_with"]
+            new_start = df.loc[new_element_bounds, "start"].values[0]
+            new_end = df.loc[new_element_bounds, "end"].values[-1]
             for idx in new_element_bounds:
                 start = df.loc[idx, "start"]
                 end = df.loc[idx, "end"]
@@ -223,9 +219,17 @@ def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> None
                 if idx == new_element_bounds[0]:
                     start_index = el.getparent().index(el)
                 el.getparent().remove(el)
+                history.append(
+                    {
+                        "old_start": start,
+                        "new_start": new_start,
+                        "old_end": end,
+                        "new_end": new_end,
+                    }
+                )
             newevent = ET.Element("event")
-            newevent.set("start", df.loc[new_element_bounds, "start"].values[0])
-            newevent.set("end", df.loc[new_element_bounds, "end"].values[-1])
+            newevent.set("start", new_start)
+            newevent.set("end", new_end)
             newevent.set(
                 "start_s", df.loc[new_element_bounds, "start_s"].astype(str).values[0]
             )
@@ -266,9 +270,12 @@ def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> None
             '<?xml version="1.0" encoding="UTF-8"?>',
         )
     )
+    return history
 
 
 if __name__ == "__main__":
     inpath = "data/Pescanik_STT/150918/150918.exb"
     outpath = "test.exb"
-    process_file_join_and_label(inpath, outpath)
+    history = process_file_join_and_label(inpath, outpath)
+    inpath = Path(inpath).with_suffix(".xlsx")
+    fix_excel(inpath, "test.xlsx", history)
