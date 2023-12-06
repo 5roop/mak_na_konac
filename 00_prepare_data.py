@@ -50,18 +50,24 @@ subprocess.run(["snakemake", "-j", "20", "-s", "Snakefile_transform_wav"], check
 
 # At this point the data is prepped.
 
+
+# Prepare the labelled only 
 subprocess.run(
     "cp -r data/Pescanik_STT data/Pescanik_STT_labelled", shell=True, check=True
 )
+subprocess.run("rm data/Pescanik_STT_labelled/*/*.exb", shell=True, check=True)
+subprocess.run("snakemake -s Snakefile_label_only -j 20", shell=True, check=True)
+
+
+# Prepare the merged and labelled
 subprocess.run(
     "cp -r data/Pescanik_STT data/Pescanik_STT_labelled_and_merged",
     shell=True,
     check=True,
 )
 subprocess.run(
-    "rm data/Pescanik_STT_labelled_and_merged/*/*.exb", shell=True, check=True
+    """rm data/Pescanik_STT_labelled_and_merged/*/*.exb;
+       rm data/Pescanik_STT_labelled_and_merged/*/*.xlsx""", shell=True, check=True
 )
 subprocess.run("snakemake -s Snakefile_label_and_fix -j 20", shell=True, check=True)
 
-subprocess.run("rm data/Pescanik_STT_labelled/*/*.exb", shell=True, check=True)
-subprocess.run("snakemake -s Snakefile_label_only -j 20", shell=True, check=True)
