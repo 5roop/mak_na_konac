@@ -37,3 +37,8 @@ Implemented changes: in accordance with the email correspondence we now merge se
 This was implemented and has been sent to Zurich. 
 
 Further work: fix the excel files that now relate to unexisting spans.
+
+# 2023-12-06T20:46:11
+
+TODO:
+* link the audio properly in Južne Vesti.
