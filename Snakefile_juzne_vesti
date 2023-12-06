@@ -1,0 +1,113 @@
+from pathlib import Path
+import subprocess
+import pandas as pd
+from lxml import etree as ET
+from pydub import AudioSegment
+
+all_ids = [i.name for i in Path("data/02_Južne_vesti_asr/").glob('[0-9]' * 6)]
+
+
+rule gather_segments:
+    input: expand("data/02_Južne_vesti_asr/{num}/{num}.out.segmentation_complete", num=all_ids)
+        
+
+rule segment:
+    input:
+        xlsx="data/02_Južne_vesti_asr/{num}/{num}.xlsx",
+        audio="data/02_Južne_vesti_asr/{num}/{num}.wav",
+        exb="data/02_Južne_vesti_asr/{num}/{num}.exb",
+    output: "data/02_Južne_vesti_asr/{num}/{num}.out.segmentation_complete"
+    wildcard_constraints:
+        num="\d+"
+    run:
+        print(f"{wildcards.num=}")
+        subprocess.run(["mkdir",
+                        "-p", 
+                        f"./data/02_Južne_vesti_asr/{wildcards.num}/segments".replace(" ","")
+                        ])
+        doc = ET.fromstring(Path(input.exb).read_bytes())
+        timeline_element = doc.find(".//common-timeline")
+        timeline_dict = {
+            tli.get("id"): tli.get("time") for tli in timeline_element.findall(".//tli[@time]")
+        }
+        events = doc.findall(".//event")
+        starts = [i.get("start") for i in events]
+        ends = [i.get("end") for i in events]
+        
+        df = pd.DataFrame(data=dict(
+            start=starts,
+            end=ends,
+        ))
+
+        df["end_s"] = df.end.map(timeline_dict).astype(float)
+        df["start_s"] = df.start.map(timeline_dict).astype(float)
+        df = df.dropna()
+        audio = AudioSegment.from_wav(input.audio)
+        for i, row in df.iterrows():
+            if row["start_s"] >= row["end_s"]:
+                continue
+            seg = audio[int(1000*row["start_s"]): int(1000*row["end_s"])]
+            outpath = Path("data/02_Južne_vesti_asr/") / wildcards.num / "segments" / f"{row['start'].strip()}__{row['end'].strip()}.wav"
+            seg.export(str(outpath).replace(" ", ""), format="wav")
+        subprocess.run(f"touch {output[0]}", shell=True)
+        
+rule perform_asr_whisper:
+    input: "data/02_Južne_vesti_asr/{num}/{num}.out.segmentation_complete"
+    params:
+        # model="Sagicc/whisper-large-v3-sr-cmb",
+        model="openai/whisper-large-v3",
+        cuda="cuda:2"
+    output: "data/02_Južne_vesti_asr/{num}/{num}.out.whisper"
+    conda: "base"
+    script:
+        "jvscripts/process.py"
+        
+rule perform_asr_whisper_sagic:
+    input: "data/02_Južne_vesti_asr/{num}/{num}.out.segmentation_complete"
+    params:
+        model="Sagicc/whisper-large-v3-sr-cmb",
+        # model="openai/whisper-large-v3",
+        cuda="cuda:2"
+    output: "data/02_Južne_vesti_asr/{num}/{num}.out.whisper_sagic"
+    conda: "base"
+    script:
+        "jvscripts/process.py"
+        
+rule gather_asr:
+    input: expand("data/02_Južne_vesti_asr/{num}/{num}.out.{suffix}", num=all_ids, suffix=["whisper", "whisper_sagic"])
+
+rule pack_asr_into_exb:
+    input:
+        original="data/02_Južne_vesti_asr/{num}/{num}.exb",
+        whisper="data/02_Južne_vesti_asr/{num}/{num}.out.whisper",
+        whisper_sagic="data/02_Južne_vesti_asr/{num}/{num}.out.whisper_sagic",
+    output: "data/02_Južne_vesti_asr/{num}/{num}_asr.exb"
+    run:
+        from utils import add_results_to_exb
+        add_results_to_exb(
+        exb_path=input.original,
+        asr_path=input.whisper,
+        modelname="whisper",
+        outpath=output[0]
+        )
+        add_results_to_exb(
+        exb_path=output[0],
+        asr_path=input.whisper_sagic,
+        modelname="sagic - whisper",
+        outpath=output[0]
+        )
+        Path(output[0]).write_text(
+            Path(output[0]).read_text().replace("../audio snimci/wav/", "")
+            )
+        Path(input.original).write_text(
+            Path(input.original).read_text().replace("../audio snimci/wav/", "")
+        )
+rule gather_asr_outputs:
+    default_target: True
+    input: expand("data/02_Južne_vesti_asr/{num}/{num}_asr.exb", num=all_ids)
+    shell:
+        """
+        cd data;
+        cp -r 02_Južne_vesti_asr 02_Južne_vesti_out;
+        rm -r 02_Južne_vesti_out/*/*.out.* 02_Južne_vesti_out/*/segments
+        """

@@ -33,7 +33,7 @@ def fix_excel(inpath: str, outpath: str, history: list[dict]):
     df.drop_duplicates().to_excel(outpath, index=False)
 
 
-def process_file_label_only(inpath: Path | str, outpath: Path | str) -> None:
+def process_file_label_only(inpath: Path, outpath: Path) -> None:
     inpath = Path(inpath)
     audio_path = inpath.with_suffix(".wav")
     audio = AudioSegment.from_wav(audio_path)
@@ -120,7 +120,7 @@ def process_file_label_only(inpath: Path | str, outpath: Path | str) -> None:
     )
 
 
-def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> list:
+def process_file_join_and_label(inpath: Path, outpath: Path) -> list:
     history = []
     inpath = Path(inpath)
     audio_path = inpath.with_suffix(".wav")
@@ -273,9 +273,70 @@ def process_file_join_and_label(inpath: Path | str, outpath: Path | str) -> list
     return history
 
 
+def add_results_to_exb(
+    exb_path: str, asr_path: str, modelname: str = "whisper", outpath: str = ""
+):
+    from transliterate import translit
+
+    asr = pd.read_csv(asr_path)
+    asr["file"] = asr.file.apply(lambda s: Path(s).with_suffix("").name)
+    asr["file_fragments"] = asr.file.str.split("_")
+    asr["start"] = asr.file_fragments.apply(lambda l: l[0])
+    asr["end"] = asr.file_fragments.apply(lambda l: l[-1])
+    asr["transcript"] = asr.transcript.apply(lambda s: translit(s, "sr", reversed=True))
+    exb = ET.fromstring(Path(exb_path).read_bytes())
+    timeline_element = exb.find(".//common-timeline")
+    timeline_dict = {
+        tli.get("id"): tli.get("time")
+        for tli in timeline_element.findall(".//tli[@time]")
+    }
+    last_tier = exb.findall(".//{*}tier")[-1]
+
+    new_tier = ET.Element("tier")
+    new_tier.set("id", modelname)
+    # new_tier.set("speaker", last_tier.get("speaker"))
+    new_tier.set("category", "v")
+    new_tier.set("type", "t")
+    new_tier.set("display-name", f"ASR - {modelname}")
+
+    for i, row in asr.iterrows():
+        event = ET.Element("event")
+        event.set("start", row["start"])
+        event.set("end", row["end"])
+        event.text = row["transcript"]
+        new_tier.append(event)
+
+    new_tier[:] = sorted(
+        new_tier, key=lambda child: float(timeline_dict.get(child.get("start")))
+    )
+    i = last_tier.getparent().index(last_tier)
+    last_tier.getparent().insert(i + 1, new_tier)
+    ET.indent(exb, space="\t")
+    exb.getroottree().write(
+        outpath,
+        pretty_print=True,
+        encoding="utf8",
+        xml_declaration='<?xml version="1.0" encoding="UTF-8"?>',
+    )
+    Path(outpath).write_text(
+        Path(outpath)
+        .read_text()
+        .replace(
+            "<?xml version='1.0' encoding='UTF8'?>",
+            '<?xml version="1.0" encoding="UTF-8"?>',
+        )
+    )
+
+
 if __name__ == "__main__":
-    inpath = "data/Pescanik_STT/150918/150918.exb"
-    outpath = "test.exb"
-    history = process_file_join_and_label(inpath, outpath)
-    inpath = Path(inpath).with_suffix(".xlsx")
-    fix_excel(inpath, "test.xlsx", history)
+    # inpath = "data/Pescanik_STT/150918/150918.exb"
+    # outpath = "test.exb"
+    # history = process_file_join_and_label(inpath, outpath)
+    # inpath = Path(inpath).with_suffix(".xlsx")
+    # fix_excel(inpath, "test.xlsx", history)
+    add_results_to_exb(
+        exb_path="data/02_Južne_vesti_asr/230313/230313.exb",
+        asr_path="data/02_Južne_vesti_asr/230313/230313.out.whisper",
+        modelname="whisper",
+        outpath="test.ext",
+    )
