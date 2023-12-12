@@ -41,4 +41,5 @@ Further work: fix the excel files that now relate to unexisting spans.
 # 2023-12-06T20:46:11
 
 TODO:
-* link the audio properly in Južne Vesti.
+✓ link the audio properly in Južne Vesti.
+* Weird transliterations:   Яgodini in vanilla (ok, Я is not in Serbian Azbuka, but still), also some weird char in Sagic-v3 -> naught to do here.
