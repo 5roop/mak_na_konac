@@ -328,15 +328,38 @@ def add_results_to_exb(
     )
 
 
+def fix_audio_reference(infile: str) -> None:
+    exb = ET.fromstring(Path(infile).read_bytes())
+    ref = exb.find(".//referenced-file")
+    new_ref_url = Path(ref.get("url")).with_suffix(".wav").name
+    ref.set("url", new_ref_url)
+    ET.indent(exb, space="\t")
+    exb.getroottree().write(
+        infile,
+        pretty_print=True,
+        encoding="utf8",
+        xml_declaration='<?xml version="1.0" encoding="UTF-8"?>',
+    )
+    Path(infile).write_text(
+        Path(infile)
+        .read_text()
+        .replace(
+            "<?xml version='1.0' encoding='UTF8'?>",
+            '<?xml version="1.0" encoding="UTF-8"?>',
+        )
+    )
+
+
 if __name__ == "__main__":
     # inpath = "data/Pescanik_STT/150918/150918.exb"
     # outpath = "test.exb"
     # history = process_file_join_and_label(inpath, outpath)
     # inpath = Path(inpath).with_suffix(".xlsx")
     # fix_excel(inpath, "test.xlsx", history)
-    add_results_to_exb(
-        exb_path="data/02_Južne_vesti_asr/230313/230313.exb",
-        asr_path="data/02_Južne_vesti_asr/230313/230313.out.whisper",
-        modelname="whisper",
-        outpath="test.ext",
-    )
+    # add_results_to_exb(
+    #     exb_path="data/02_Južne_vesti_asr/230313/230313.exb",
+    #     asr_path="data/02_Južne_vesti_asr/230313/230313.out.whisper",
+    #     modelname="whisper",
+    #     outpath="test.ext",
+    # )
+    fix_audio_reference("data/02_Južne_vesti_asr/230313/230313.exb")
