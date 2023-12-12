@@ -104,6 +104,7 @@ rule gather_asr_outputs:
     shell:
         """
         cd data;
-        cp -r 02_Južne_vesti_asr 02_Južne_vesti_out;
-        rm -r 02_Južne_vesti_out/*/*.out.* 02_Južne_vesti_out/*/segments
+        rm -rf 02_Južne_vesti_out;
+        cp -r  02_Južne_vesti_asr 02_Južne_vesti_out;
+        rm -r --interactive=never 02_Južne_vesti_out/*/*.out.* 02_Južne_vesti_out/*/segments
         """
