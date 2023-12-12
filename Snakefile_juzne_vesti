@@ -84,6 +84,8 @@ rule pack_asr_into_exb:
     output: "data/02_Južne_vesti_asr/{num}/{num}_asr.exb"
     run:
         from utils import add_results_to_exb
+        from utils import fix_audio_reference
+        fix_audio_reference(input.original)
         add_results_to_exb(
         exb_path=input.original,
         asr_path=input.whisper,
@@ -95,12 +97,6 @@ rule pack_asr_into_exb:
         asr_path=input.whisper_sagic,
         modelname="sagic - whisper",
         outpath=output[0]
-        )
-        Path(output[0]).write_text(
-            Path(output[0]).read_text().replace("../audio snimci/wav/", "")
-            )
-        Path(input.original).write_text(
-            Path(input.original).read_text().replace("../audio snimci/wav/", "")
         )
 rule gather_asr_outputs:
     default_target: True
