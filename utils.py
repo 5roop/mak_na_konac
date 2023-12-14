@@ -427,15 +427,20 @@ def fix_audio_reference(infile: str) -> None:
 
 
 if __name__ == "__main__":
+    
+    df = parse_excel("data/02_Južne_vesti_asr/230410/230410.xlsx")
+    
+    df
     # inpath = "data/Pescanik_STT/150918/150918.exb"
     # outpath = "test.exb"
     # history = process_file_join_and_label(inpath, outpath)
     # inpath = Path(inpath).with_suffix(".xlsx")
     # fix_excel(inpath, "test.xlsx", history)
-    # add_results_to_exb(
-    #     exb_path="data/02_Južne_vesti_asr/230313/230313.exb",
-    #     asr_path="data/02_Južne_vesti_asr/230313/230313.out.whisper",
-    #     modelname="whisper",
-    #     outpath="test.ext",
-    # )
-    fix_audio_reference("data/02_Južne_vesti_asr/230313/230313.exb")
+    add_results_to_exb_filtered(
+        exb_path="data/02_Južne_vesti_asr/230410/230410.exb",
+        asr_path="data/02_Južne_vesti_asr/230410/230410.out.whisper",
+        xlsx_path="data/02_Južne_vesti_asr/230410/230410.xlsx",
+        modelname="whisper",
+        outpath="test.ext",
+    )
+    # fix_audio_reference("data/02_Južne_vesti_asr/230313/230313.exb")

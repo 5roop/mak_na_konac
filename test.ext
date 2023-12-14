@@ -4,7 +4,7 @@
 		<meta-information>
 			<project-name/>
 			<transcription-name/>
-			<referenced-file url="230313.wav"/>
+			<referenced-file url="230410.wav"/>
 			<ud-meta-information/>
 			<comment/>
 			<transcription-convention/>
@@ -18,10 +18,10 @@
 				<l2/>
 				<ud-speaker-information>
 </ud-speaker-information>
-				<comment>BcG: oznaka za špicu (muzika) na početku i na kraju emisije.</comment>
+				<comment>BcG: oznaka za špicu(muzika) na početku i na kraju emisije.</comment>
 			</speaker>
 			<speaker id="SPK1">
-				<abbreviation>MD:</abbreviation>
+				<abbreviation>LjJ:</abbreviation>
 				<sex value="f"/>
 				<languages-used/>
 				<l1/>
@@ -31,8 +31,18 @@
 				<comment/>
 			</speaker>
 			<speaker id="SPK2">
-				<abbreviation>SZ:</abbreviation>
-				<sex value="m"/>
+				<abbreviation>IP:</abbreviation>
+				<sex value="f"/>
+				<languages-used/>
+				<l1/>
+				<l2/>
+				<ud-speaker-information>
+</ud-speaker-information>
+				<comment/>
+			</speaker>
+			<speaker id="SPK3">
+				<abbreviation>LjC:</abbreviation>
+				<sex value="f"/>
 				<languages-used/>
 				<l1/>
 				<l2/>
@@ -45,635 +55,246 @@
 	<basic-body>
 		<common-timeline>
 			<tli id="T2" time="0.0"/>
-			<tli id="T0" time="21.898"/>
-			<tli id="T3" time="28.587"/>
-			<tli id="T4" time="35.37"/>
-			<tli id="T5" time="43.3066263050838"/>
-			<tli id="T6" time="50.021"/>
-			<tli id="T7" time="54.712"/>
-			<tli id="T8" time="58.60661204556523"/>
-			<tli id="T9" time="64.01327367324733"/>
-			<tli id="T10" time="71.93993295230284"/>
-			<tli id="T11" time="74.64"/>
-			<tli id="T12" time="81.79992376283532"/>
-			<tli id="T13" time="87.043"/>
-			<tli id="T14" time="94.84980110091743"/>
-			<tli id="T15" time="101.92121484366226"/>
-			<tli id="T16" time="108.99977142857144"/>
-			<tli id="T17" time="114.609"/>
-			<tli id="T18" time="119.929"/>
-			<tli id="T19" time="124.757"/>
-			<tli id="T20" time="130.39972655307994"/>
-			<tli id="T21" time="135.38543038382326"/>
-			<tli id="T22" time="141.22113243212883"/>
-			<tli id="T23" time="148.763"/>
-			<tli id="T24" time="154.5996758060288"/>
-			<tli id="T25" time="159.7210936378955"/>
-			<tli id="T26" time="165.12822515633778"/>
-			<tli id="T27" time="170.5996422542595"/>
-			<tli id="T28" time="174.866"/>
-			<tli id="T29" time="181.7067618198839"/>
-			<tli id="T30" time="187.007"/>
-			<tli id="T31" time="192.19959695937092"/>
-			<tli id="T33" time="196.104"/>
-			<tli id="T34" time="199.63"/>
-			<tli id="T35" time="203.96385800411906"/>
-			<tli id="T36" time="207.11385139861446"/>
-			<tli id="T37" time="214.013836929414"/>
-			<tli id="T38" time="220.6066802471447"/>
-			<tli id="T39" time="226.01381176558695"/>
-			<tli id="T40" time="233.0137970866879"/>
-			<tli id="T42" time="240.0137824077888"/>
-			<tli id="T43" time="247.99947994757537"/>
-			<tli id="T44" time="250.728"/>
-			<tli id="T45" time="255.25660758659427"/>
-			<tli id="T46" time="262.9994484927916"/>
-			<tli id="T47" time="267.46372484553456"/>
-			<tli id="T48" time="272.9279991012919"/>
-			<tli id="T49" time="278.095"/>
-			<tli id="T50" time="283.3351201348062"/>
-			<tli id="T51" time="291.8065309417712"/>
-			<tli id="T52" time="298.9422302639955"/>
-			<tli id="T53" time="305.341"/>
-			<tli id="T54" time="313.401"/>
-			<tli id="T55" time="317.5136198914061"/>
-			<tli id="T56" time="323.9850348923423"/>
-			<tli id="T57" time="328.60645377270174"/>
-			<tli id="T58" time="332.76358791237595"/>
-			<tli id="T59" time="338.149290904325"/>
-			<tli id="T60" time="343.9064216888223"/>
-			<tli id="T61" time="348.249"/>
-			<tli id="T62" time="354.8135416738439"/>
-			<tli id="T63" time="357.645"/>
-			<tli id="T64" time="364.687"/>
-			<tli id="T65" time="368.7996562803626"/>
-			<tli id="T66" time="374.99"/>
-			<tli id="T67" time="380.3996454692244"/>
-			<tli id="T68" time="385.287"/>
-			<tli id="T69" time="392.55963413616905"/>
-			<tli id="T70" time="397.2662964162475"/>
-			<tli id="T71" time="403.6462904701214"/>
-			<tli id="T72" time="406.41962121872285"/>
-			<tli id="T73" time="411.687"/>
-			<tli id="T74" time="417.38"/>
-			<tli id="T75" time="422.4529396090748"/>
-			<tli id="T76" time="426.81293554557806"/>
-			<tli id="T77" time="429.599"/>
-			<tli id="T78" time="435.492"/>
-			<tli id="T79" time="443.002"/>
-			<tli id="T80" time="450.26624702052953"/>
-			<tli id="T81" time="456.4262412794423"/>
-			<tli id="T82" time="464.4062338421248"/>
-			<tli id="T83" time="471.4995605645092"/>
-			<tli id="T84" time="479.4395531644715"/>
-			<tli id="T85" time="487.573"/>
-			<tli id="T86" time="493.579"/>
-			<tli id="T87" time="497.689"/>
-			<tli id="T88" time="502.3595318031534"/>
-			<tli id="T89" time="506.7328610605634"/>
-			<tli id="T90" time="512.9328552821963"/>
-			<tli id="T91" time="520.703"/>
-			<tli id="T92" time="525.0061773632473"/>
-			<tli id="T93" time="531.2328382266937"/>
-			<tli id="T94" time="532.5661703173676"/>
-			<tli id="T95" time="537.1794993510987"/>
-			<tli id="T96" time="544.6461590588718"/>
-			<tli id="T97" time="552.114"/>
-			<tli id="T98" time="554.9994827429535"/>
-			<tli id="T99" time="561.868"/>
-			<tli id="T100" time="567.9928039665693"/>
-			<tli id="T101" time="576.6927958582156"/>
-			<tli id="T102" time="586.8061197659762"/>
-			<tli id="T103" time="592.9994473271557"/>
-			<tli id="T104" time="600.537"/>
-			<tli id="T105" time="606.6794345774686"/>
-			<tli id="T106" time="611.088"/>
-			<tli id="T107" time="614.99"/>
-			<tli id="T108" time="619.866088954232"/>
-			<tli id="T109" time="623.4860855804113"/>
-			<tli id="T110" time="627.0260822811501"/>
-			<tli id="T111" time="632.0127443002701"/>
-			<tli id="T112" time="637.3127393606983"/>
-			<tli id="T113" time="641.018"/>
-			<tli id="T114" time="647.853"/>
-			<tli id="T115" time="651.271"/>
-			<tli id="T116" time="658.1660532588359"/>
-			<tli id="T117" time="663.9993811555336"/>
-			<tli id="T118" time="669.4393760854825"/>
-			<tli id="T119" time="673.7860387010791"/>
-			<tli id="T120" time="681.6926979987744"/>
-			<tli id="T121" time="686.612"/>
-			<tli id="T122" time="691.319355693439"/>
-			<tli id="T123" time="696.642"/>
-			<tli id="T124" time="704.294"/>
-			<tli id="T125" time="713.86"/>
-			<tli id="T126" time="721.877"/>
-			<tli id="T127" time="728.7393208181982"/>
-			<tli id="T128" time="733.743"/>
-			<tli id="T129" time="738.3593118524093"/>
-			<tli id="T130" time="741.5393088886664"/>
-			<tli id="T132" time="751.3726330573852"/>
-			<tli id="T133" time="757.763"/>
-			<tli id="T134" time="766.609"/>
-			<tli id="T135" time="770.95"/>
-			<tli id="T136" time="777.679"/>
-			<tli id="T137" time="783.612"/>
-			<tli id="T138" time="793.3659272531554"/>
-			<tli id="T139" time="797.419"/>
-			<tli id="T140" time="799.8325878929231"/>
-			<tli id="T141" time="806.8325813689603"/>
-			<tli id="T142" time="809.8992451775101"/>
-			<tli id="T143" time="815.6192398465005"/>
-			<tli id="T144" time="820.9059015860219"/>
-			<tli id="T145" time="825.9992301723958"/>
-			<tli id="T146" time="829.9925597839637"/>
-			<tli id="T147" time="834.8992218776432"/>
-			<tli id="T148" time="839.624"/>
-			<tli id="T149" time="847.0125439214141"/>
-			<tli id="T150" time="852.6925386276845"/>
-			<tli id="T151" time="856.3258685747704"/>
-			<tli id="T152" time="862.877"/>
-			<tli id="T153" time="869.7258560860417"/>
-			<tli id="T154" time="875.076"/>
-			<tli id="T155" time="879.931"/>
-			<tli id="T156" time="885.2391749610309"/>
-			<tli id="T157" time="890.6591699096199"/>
-			<tli id="T158" time="895.097"/>
-			<tli id="T159" time="899.117"/>
-			<tli id="T160" time="905.641"/>
-			<tli id="T161" time="911.65"/>
-			<tli id="T162" time="914.0191481382242"/>
-			<tli id="T163" time="921.0991415397017"/>
-			<tli id="T164" time="926.069"/>
-			<tli id="T165" time="931.359"/>
-			<tli id="T166" time="934.387"/>
-			<tli id="T167" time="938.6791251552353"/>
-			<tli id="T168" time="943.3991207562204"/>
-			<tli id="T169" time="948.46"/>
-			<tli id="T170" time="953.4791113617141"/>
-			<tli id="T171" time="958.4991066831008"/>
-			<tli id="T172" time="964.0057682175835"/>
-			<tli id="T173" time="966.2524327903687"/>
-			<tli id="T174" time="971.725"/>
-			<tli id="T175" time="975.77"/>
-			<tli id="T176" time="980.5057528396713"/>
-			<tli id="T177" time="986.941"/>
-			<tli id="T178" time="991.871"/>
-			<tli id="T179" time="998.1057364365648"/>
-			<tli id="T180" time="1003.512398064247"/>
-			<tli id="T181" time="1009.045"/>
-			<tli id="T182" time="1014.07"/>
-			<tli id="T183" time="1024.303"/>
-			<tli id="T185" time="1030.0057067059347"/>
-			<tli id="T187" time="1038.6723652953142"/>
-			<tli id="T188" time="1049.3323553602509"/>
-			<tli id="T189" time="1058.2856803491252"/>
-			<tli id="T190" time="1062.273"/>
-			<tli id="T191" time="1070.662"/>
-			<tli id="T192" time="1078.5656614482732"/>
-			<tli id="T193" time="1081.627"/>
-			<tli id="T194" time="1089.7056510658524"/>
-			<tli id="T195" time="1100.0056414663072"/>
-			<tli id="T196" time="1105.548"/>
-			<tli id="T197" time="1110.7722980984977"/>
-			<tli id="T198" time="1116.645"/>
-			<tli id="T199" time="1122.541"/>
-			<tli id="T200" time="1129.0989476848088"/>
-			<tli id="T201" time="1136.049"/>
-			<tli id="T202" time="1142.7589349537614"/>
-			<tli id="T203" time="1150.0055948665733"/>
-			<tli id="T204" time="1159.3522528221963"/>
-			<tli id="T205" time="1168.5722442292054"/>
-			<tli id="T206" time="1177.753"/>
-			<tli id="T207" time="1182.5322312185597"/>
-			<tli id="T208" time="1188.538892287045"/>
-			<tli id="T209" time="1197.8188836381344"/>
-			<tli id="T210" time="1208.455"/>
-			<tli id="T211" time="1212.992202830002"/>
-			<tli id="T212" time="1221.582"/>
-			<tli id="T213" time="1228.345"/>
-			<tli id="T214" time="1233.23"/>
-			<tli id="T215" time="1237.8721796419743"/>
-			<tli id="T216" time="1242.479"/>
-			<tli id="T217" time="1247.9455035870144"/>
-			<tli id="T218" time="1253.253"/>
-			<tli id="T219" time="1257.167"/>
-			<tli id="T220" time="1262.7654897748532"/>
-			<tli id="T221" time="1269.4254835677687"/>
-			<tli id="T222" time="1275.2188115017464"/>
-			<tli id="T223" time="1278.7521415420317"/>
-			<tli id="T224" time="1284.0121366397398"/>
-			<tli id="T225" time="1289.4254649278753"/>
-			<tli id="T226" time="1292.79"/>
-			<tli id="T227" time="1296.5921249152468"/>
-			<tli id="T228" time="1303.417"/>
-			<tli id="T229" time="1311.739"/>
-			<tli id="T230" time="1319.342"/>
-			<tli id="T231" time="1322.729"/>
-			<tli id="T232" time="1326.7920967690075"/>
-			<tli id="T233" time="1331.792092109034"/>
-			<tli id="T234" time="1335.3454221306797"/>
-			<tli id="T235" time="1337.032087225382"/>
-			<tli id="T236" time="1343.8187475669115"/>
-			<tli id="T237" time="1349.8920752399306"/>
-			<tli id="T238" time="1355.838"/>
-			<tli id="T239" time="1362.738729933572"/>
-			<tli id="T240" time="1365.857"/>
-			<tli id="T241" time="1370.15"/>
-			<tli id="T242" time="1374.538718936035"/>
-			<tli id="T243" time="1378.7587150030174"/>
-			<tli id="T244" time="1383.112044279067"/>
-			<tli id="T245" time="1388.0653729959201"/>
-			<tli id="T246" time="1394.817"/>
-			<tli id="T247" time="1398.9586961767247"/>
-			<tli id="T248" time="1406.172"/>
-			<tli id="T249" time="1412.638"/>
-			<tli id="T250" time="1416.558"/>
-			<tli id="T251" time="1425.443"/>
-			<tli id="T252" time="1430.03"/>
-			<tli id="T253" time="1434.8586627181157"/>
-			<tli id="T254" time="1440.585"/>
-			<tli id="T255" time="1445.811985843001"/>
-			<tli id="T256" time="1453.809"/>
-			<tli id="T257" time="1459.272"/>
-			<tli id="T258" time="1471.411961983937"/>
-			<tli id="T259" time="1478.6519552362956"/>
-			<tli id="T260" time="1486.251"/>
-			<tli id="T261" time="1493.6252746145622"/>
-			<tli id="T262" time="1500.557"/>
-			<tli id="T263" time="1504.7985975344081"/>
-			<tli id="T264" time="1509.55192643766"/>
-			<tli id="T265" time="1518.3919181988272"/>
-			<tli id="T266" time="1524.383"/>
-			<tli id="T267" time="1531.191906269295"/>
-			<tli id="T268" time="1538.5918993725347"/>
-			<tli id="T269" time="1544.877"/>
-			<tli id="T270" time="1553.643"/>
-			<tli id="T271" time="1557.2652153024208"/>
-			<tli id="T272" time="1567.423"/>
-			<tli id="T273" time="1573.7985332267751"/>
-			<tli id="T274" time="1576.99"/>
-			<tli id="T275" time="1583.2918577123723"/>
-			<tli id="T276" time="1589.0318523627232"/>
-			<tli id="T277" time="1594.6051805017396"/>
-			<tli id="T278" time="1599.319"/>
-			<tli id="T279" time="1605.6185035707044"/>
-			<tli id="T280" time="1614.2318288764573"/>
-			<tli id="T281" time="1619.32"/>
-			<tli id="T282" time="1622.765154256769"/>
-			<tli id="T283" time="1629.23848155699"/>
-			<tli id="T284" time="1632.971"/>
-			<tli id="T285" time="1639.0051391211757"/>
-			<tli id="T286" time="1645.2051333428085"/>
-			<tli id="T287" time="1650.198462022382"/>
-			<tli id="T288" time="1656.8051225316703"/>
-			<tli id="T289" time="1663.071783357837"/>
-			<tli id="T290" time="1669.152"/>
-			<tli id="T291" time="1682.268"/>
-			<tli id="T292" time="1686.571761455962"/>
-			<tli id="T293" time="1691.7984232514032"/>
-			<tli id="T295" time="1699.728"/>
-			<tli id="T296" time="1706.9584091223642"/>
-			<tli id="T297" time="1715.7050676371837"/>
-			<tli id="T298" time="1721.061"/>
-			<tli id="T299" time="1727.03"/>
-			<tli id="T300" time="1732.4317187146862"/>
-			<tli id="T301" time="1740.191"/>
-			<tli id="T302" time="1745.985039416385"/>
-			<tli id="T303" time="1748.516"/>
-			<tli id="T304" time="1755.8716968687306"/>
-			<tli id="T305" time="1762.316"/>
-			<tli id="T306" time="1771.719"/>
-			<tli id="T307" time="1779.878341161312"/>
-			<tli id="T308" time="1788.24500003029"/>
-			<tli id="T309" time="1795.4716599617416"/>
-			<tli id="T310" time="1800.5249885853952"/>
-			<tli id="T311" time="1806.9916492251627"/>
-			<tli id="T312" time="1816.8383067147888"/>
-			<tli id="T313" time="1824.5649661802431"/>
-			<tli id="T314" time="1828.3116293550365"/>
-			<tli id="T315" time="1833.3182913555165"/>
-			<tli id="T316" time="1843.0049489942612"/>
-			<tli id="T317" time="1848.351610677863"/>
-			<tli id="T318" time="1852.634"/>
-			<tli id="T319" time="1857.5382687826054"/>
-			<tli id="T320" time="1862.331"/>
-			<tli id="T321" time="1867.024926607749"/>
-			<tli id="T322" time="1871.8782554178015"/>
-			<tli id="T323" time="1877.141"/>
-			<tli id="T324" time="1882.379"/>
-			<tli id="T325" time="1888.8315729507185"/>
-			<tli id="T326" time="1893.667"/>
-			<tli id="T327" time="1899.057"/>
-			<tli id="T328" time="1904.531558318402"/>
-			<tli id="T329" time="1910.9915522977165"/>
-			<tli id="T330" time="1917.258213123883"/>
-			<tli id="T331" time="1922.9182078487931"/>
-			<tli id="T332" time="1927.2315371621228"/>
-			<tli id="T333" time="1934.4048638099475"/>
-			<tli id="T334" time="1942.14"/>
-			<tli id="T335" time="1947.5048516008173"/>
-			<tli id="T336" time="1956.018"/>
-			<tli id="T337" time="1964.2715026410401"/>
-			<tli id="T338" time="1972.4114950546034"/>
-			<tli id="T339" time="1976.8781575583603"/>
-			<tli id="T340" time="1982.628"/>
-			<tli id="T341" time="1988.004813855033"/>
-			<tli id="T342" time="1998.9248036776512"/>
-			<tli id="T343" time="2009.042"/>
-			<tli id="T344" time="2016.597"/>
-			<tli id="T345" time="2022.271"/>
-			<tli id="T346" time="2028.1247764634063"/>
-			<tli id="T347" time="2034.4381039127466"/>
-			<tli id="T348" time="2040.0047653913095"/>
-			<tli id="T349" time="2044.96"/>
-			<tli id="T350" time="2051.06"/>
-			<tli id="T351" time="2056.959"/>
-			<tli id="T352" time="2063.6780766612223"/>
-			<tli id="T353" time="2070.5647369095523"/>
-			<tli id="T354" time="2076.0247318208612"/>
-			<tli id="T355" time="2082.504"/>
-			<tli id="T356" time="2088.813"/>
-			<tli id="T357" time="2094.831380959815"/>
-			<tli id="T358" time="2102.191374100334"/>
-			<tli id="T359" time="2107.7713688998037"/>
-			<tli id="T360" time="2115.9113613133673"/>
-			<tli id="T361" time="2124.151"/>
-			<tli id="T362" time="2131.947"/>
-			<tli id="T363" time="2137.6513410518023"/>
-			<tli id="T364" time="2142.957"/>
-			<tli id="T365" time="2147.611"/>
-			<tli id="T366" time="2152.3113273887607"/>
-			<tli id="T367" time="2155.5846576713643"/>
-			<tli id="T368" time="2164.564649302052"/>
-			<tli id="T369" time="2171.9313091030244"/>
-			<tli id="T370" time="2177.784636981083"/>
-			<tli id="T371" time="2183.558"/>
-			<tli id="T372" time="2188.651293520074"/>
-			<tli id="T373" time="2194.25"/>
-			<tli id="T374" time="2200.4246158807236"/>
-			<tli id="T375" time="2204.8179451194937"/>
-			<tli id="T376" time="2210.357"/>
-			<tli id="T377" time="2214.711"/>
-			<tli id="T378" time="2221.204596513874"/>
-			<tli id="T379" time="2227.867"/>
-			<tli id="T380" time="2233.362"/>
-			<tli id="T381" time="2239.909"/>
-			<tli id="T382" time="2244.0379085666623"/>
-			<tli id="T383" time="2250.61"/>
-			<tli id="T384" time="2256.311230461314"/>
-			<tli id="T385" time="2262.3712248134266"/>
-			<tli id="T386" time="2267.222"/>
-			<tli id="T387" time="2270.5178838874426"/>
-			<tli id="T388" time="2274.9778797307467"/>
-			<tli id="T389" time="2280.0178750334935"/>
-			<tli id="T390" time="2283.445"/>
-			<tli id="T391" time="2288.652"/>
-			<tli id="T392" time="2293.25"/>
-			<tli id="T393" time="2297.0911924545712"/>
-			<tli id="T394" time="2303.4045199039115"/>
-			<tli id="T395" time="2310.178"/>
-			<tli id="T396" time="2316.0111748212316"/>
-			<tli id="T397" time="2321.2778365793934"/>
-			<tli id="T398" time="2325.173"/>
-			<tli id="T399" time="2329.0111627053006"/>
-			<tli id="T400" time="2333.3044920372704"/>
-			<tli id="T401" time="2340.019"/>
-			<tli id="T402" time="2346.06"/>
-			<tli id="T403" time="2349.972"/>
-			<tli id="T404" time="2354.9444718689056"/>
-			<tli id="T405" time="2362.795"/>
-			<tli id="T406" time="2368.929"/>
-			<tli id="T407" time="2373.238"/>
-			<tli id="T408" time="2379.658"/>
-			<tli id="T409" time="2382.767"/>
-			<tli id="T410" time="2386.7044422687545"/>
-			<tli id="T32" time="2392.704436676787"/>
-			<tli id="T1" time="2396.385"/>
-			<tli id="T41" time="2402.897760509987"/>
-			<tli id="T131" time="2410.958"/>
-			<tli id="T184" time="2416.371081286246"/>
-			<tli id="T186" time="2423.7177411058583"/>
-			<tli id="T294" time="2430.0377352156524"/>
-			<tli id="T411" time="2435.9110630750697"/>
-			<tli id="T412" time="2442.0910573153424"/>
-			<tli id="T413" time="2448.147"/>
-			<tli id="T414" time="2452.797714003453"/>
-			<tli id="T415" time="2459.464374456822"/>
-			<tli id="T416" time="2465.9510350779497"/>
-			<tli id="T417" time="2471.9910294487017"/>
-			<tli id="T418" time="2475.691026000322"/>
-			<tli id="T419" time="2481.884353561501"/>
-			<tli id="T420" time="2487.46"/>
-			<tli id="T421" time="2491.7376777115805"/>
-			<tli id="T422" time="2493.193"/>
-			<tli id="T423" time="2498.028"/>
-			<tli id="T424" time="2504.07"/>
-			<tli id="T425" time="2508.5509953749765"/>
-			<tli id="T426" time="2513.613"/>
-			<tli id="T427" time="2521.5776499008593"/>
-			<tli id="T428" time="2527.5043110439037"/>
-			<tli id="T429" time="2534.63"/>
-			<tli id="T430" time="2539.33096668818"/>
-			<tli id="T431" time="2545.856"/>
-			<tli id="T432" time="2552.7909541435315"/>
-			<tli id="T433" time="2554.82"/>
-			<tli id="T434" time="2559.554"/>
-			<tli id="T435" time="2568.9976057056715"/>
-			<tli id="T436" time="2573.876"/>
-			<tli id="T437" time="2579.9909287932765"/>
-			<tli id="T438" time="2583.868"/>
-			<tli id="T439" time="2590.0242527755963"/>
-			<tli id="T440" time="2595.6042475750664"/>
-			<tli id="T441" time="2598.710911346336"/>
-			<tli id="T442" time="2609.664234471221"/>
-			<tli id="T443" time="2619.190892259085"/>
-			<tli id="T444" time="2622.277556048995"/>
-			<tli id="T445" time="2629.3908827527393"/>
-			<tli id="T446" time="2634.684211152715"/>
-			<tli id="T447" time="2639.6308732091143"/>
-			<tli id="T448" time="2646.1908670952294"/>
-			<tli id="T449" time="2648.349"/>
-			<tli id="T450" time="2651.204195756162"/>
-			<tli id="T451" time="2655.3841918604244"/>
-			<tli id="T452" time="2659.004188486604"/>
-			<tli id="T453" time="2662.884184870464"/>
-			<tli id="T454" time="2669.884178346502"/>
-			<tli id="T455" time="2675.2908399741837"/>
-			<tli id="T456" time="2681.298"/>
-			<tli id="T457" time="2685.9508300391203"/>
-			<tli id="T458" time="2691.277491741362"/>
-			<tli id="T459" time="2694.293"/>
-			<tli id="T460" time="2699.492"/>
-			<tli id="T461" time="2706.1441445523747"/>
-			<tli id="T462" time="2712.1441389604065"/>
-			<tli id="T463" time="2716.921"/>
-			<tli id="T464" time="2723.8441280560687"/>
-			<tli id="T465" time="2730.8374548716524"/>
-			<tli id="T466" time="2736.604116163817"/>
-			<tli id="T467" time="2742.19077762374"/>
-			<tli id="T468" time="2748.7774381516683"/>
-			<tli id="T469" time="2754.3174329884173"/>
-			<tli id="T470" time="2760.004094355141"/>
-			<tli id="T471" time="2767.2440876074998"/>
-			<tli id="T472" time="2772.0307498130182"/>
-			<tli id="T473" time="2776.1107460104804"/>
-			<tli id="T474" time="2782.8040731056626"/>
-			<tli id="T475" time="2786.250736560054"/>
-			<tli id="T476" time="2792.6040639721145"/>
-			<tli id="T477" time="2796.030727445146"/>
-			<tli id="T478" time="2803.513"/>
-			<tli id="T479" time="2806.857384021417"/>
-			<tli id="T480" time="2811.9907125705113"/>
-			<tli id="T481" time="2816.5307083392554"/>
-			<tli id="T482" time="2819.9973717750067"/>
-			<tli id="T483" time="2821.4973703770147"/>
-			<tli id="T484" time="2832.487"/>
-			<tli id="T485" time="2837.592"/>
-			<tli id="T486" time="2839.991"/>
-			<tli id="T487" time="2844.877348586979"/>
-			<tli id="T488" time="2847.178"/>
-			<tli id="T500"/>
-			<tli id="T501"/>
+			<tli id="T0" time="16.319975479370562"/>
+			<tli id="T3" time="23.453298094945115"/>
+			<tli id="T4" time="30.862"/>
+			<tli id="T5" time="36.646611605432994"/>
+			<tli id="T6" time="44.193266933311875"/>
+			<tli id="T7" time="50.71992379373009"/>
+			<tli id="T8" time="58.18657924180812"/>
+			<tli id="T9" time="65.05990224802996"/>
+			<tli id="T10" time="70.548"/>
+			<tli id="T11" time="77.81321641961325"/>
+			<tli id="T12" time="84.82653921548653"/>
+			<tli id="T13" time="89.87986495623936"/>
+			<tli id="T14" time="93.15986002807362"/>
+			<tli id="T15" time="99.71318351509213"/>
+			<tli id="T16" time="105.89984088635678"/>
+			<tli id="T17" time="111.57316569556608"/>
+			<tli id="T18" time="121.497"/>
+			<tli id="T19" time="130.39980407536282"/>
+			<tli id="T20" time="136.69312795302864"/>
+			<tli id="T21" time="141.741"/>
+			<tli id="T22" time="148.0664441980475"/>
+			<tli id="T23" time="155.061"/>
+			<tli id="T24" time="161.96642331344276"/>
+			<tli id="T25" time="169.1464125255678"/>
+			<tli id="T26" time="175.28640330028196"/>
+			<tli id="T27" time="178.40639861251455"/>
+			<tli id="T28" time="185.4997212881887"/>
+			<tli id="T29" time="190.89304651809508"/>
+			<tli id="T30" time="194.6463742120843"/>
+			<tli id="T31" time="202.04636309366163"/>
+			<tli id="T32" time="209.09968582943532"/>
+			<tli id="T33" time="213.3930127120802"/>
+			<tli id="T34" time="220.61300186410566"/>
+			<tli id="T35" time="224.248"/>
+			<tli id="T36" time="231.43298560716875"/>
+			<tli id="T37" time="240.20630575866045"/>
+			<tli id="T38" time="247.21962855453376"/>
+			<tli id="T39" time="253.70628547505152"/>
+			<tli id="T40" time="256.50628126808084"/>
+			<tli id="T41" time="261.2329408329802"/>
+			<tli id="T42" time="266.63293271953665"/>
+			<tli id="T43" time="271.6062585804886"/>
+			<tli id="T44" time="276.5129178749399"/>
+			<tli id="T45" time="283.6795737737648"/>
+			<tli id="T46" time="289.004"/>
+			<tli id="T47" time="294.083"/>
+			<tli id="T48" time="300.75288145459325"/>
+			<tli id="T49" time="303.14621119196823"/>
+			<tli id="T50" time="308.3728700056229"/>
+			<tli id="T51" time="313.8195284887299"/>
+			<tli id="T52" time="317.1528568137647"/>
+			<tli id="T53" time="319.03952064573434"/>
+			<tli id="T54" time="326.27950976771"/>
+			<tli id="T55" time="331.516"/>
+			<tli id="T56" time="338.097"/>
+			<tli id="T57" time="344.4128158558995"/>
+			<tli id="T58" time="350.89280611976733"/>
+			<tli id="T59" time="355.20613297236235"/>
+			<tli id="T60" time="362.19278914163533"/>
+			<tli id="T61" time="369.999444078867"/>
+			<tli id="T62" time="376.0927682570306"/>
+			<tli id="T63" time="381.61275996328834"/>
+			<tli id="T64" time="385.871"/>
+			<tli id="T65" time="394.5394072077734"/>
+			<tli id="T66" time="401.7260630765485"/>
+			<tli id="T67" time="406.38605607494725"/>
+			<tli id="T68" time="414.35"/>
+			<tli id="T69" time="420.35936841349326"/>
+			<tli id="T70" time="424.0060296010814"/>
+			<tli id="T71" time="434.773"/>
+			<tli id="T72" time="441.98600258631933"/>
+			<tli id="T73" time="451.557"/>
+			<tli id="T74" time="456.962"/>
+			<tli id="T75" time="462.54597169513414"/>
+			<tli id="T76" time="469.495"/>
+			<tli id="T77" time="476.36"/>
+			<tli id="T78" time="483.67927327585505"/>
+			<tli id="T79" time="494.09259096326383"/>
+			<tli id="T80" time="501.4192466216904"/>
+			<tli id="T81" time="505.8992398905373"/>
+			<tli id="T82" time="510.6792327086372"/>
+			<tli id="T83" time="517.165"/>
+			<tli id="T84" time="522.8792143782648"/>
+			<tli id="T85" time="527.8392069259166"/>
+			<tli id="T86" time="533.9858643572808"/>
+			<tli id="T87" time="536.8858600000611"/>
+			<tli id="T88" time="542.27"/>
+			<tli id="T89" time="551.51"/>
+			<tli id="T90" time="556.5058305212161"/>
+			<tli id="T91" time="567.1858144746278"/>
+			<tli id="T92" time="570.8991422287166"/>
+			<tli id="T93" time="579.045"/>
+			<tli id="T94" time="582.098"/>
+			<tli id="T95" time="588.2191162055975"/>
+			<tli id="T96" time="596.04"/>
+			<tli id="T97" time="598.5457673565555"/>
+			<tli id="T98" time="604.3057587022157"/>
+			<tli id="T99" time="607.2924208814469"/>
+			<tli id="T100" time="613.0857455103575"/>
+			<tli id="T101" time="620.1524015594314"/>
+			<tli id="T102" time="624.9390610341813"/>
+			<tli id="T103" time="631.2123849418969"/>
+			<tli id="T104" time="636.4723770388019"/>
+			<tli id="T105" time="643.577"/>
+			<tli id="T106" time="648.264"/>
+			<tli id="T107" time="659.2990094086405"/>
+			<tli id="T108" time="665.859"/>
+			<tli id="T109" time="673.2656550905365"/>
+			<tli id="T110" time="679.016"/>
+			<tli id="T111" time="687.6923000812872"/>
+			<tli id="T112" time="693.971"/>
+			<tli id="T113" time="698.6189503307513"/>
+			<tli id="T114" time="702.218944921789"/>
+			<tli id="T115" time="705.7656062596261"/>
+			<tli id="T116" time="707.8522697910979"/>
+			<tli id="T117" time="709.043"/>
+			<tli id="T118" time="717.898921362753"/>
+			<tli id="T119" time="722.034"/>
+			<tli id="T1" time="728.912238148668"/>
+			<tli id="T120" time="734.4722297948261"/>
+			<tli id="T121" time="741.411"/>
+			<tli id="T122" time="748.7988749358259"/>
+			<tli id="T123" time="755.1988653198928"/>
+			<tli id="T124" time="758.247"/>
+			<tli id="T125" time="763.5388527891299"/>
+			<tli id="T126" time="766.5721815649116"/>
+			<tli id="T127" time="774.862"/>
+			<tli id="T128" time="780.0188280281021"/>
+			<tli id="T129" time="783.2321565334357"/>
+			<tli id="T130" time="790.26"/>
+			<tli id="T131" time="793.33"/>
+			<tli id="T132" time="797.905467820239"/>
+			<tli id="T135"/>
+			<tli id="T136"/>
 		</common-timeline>
 		<tier id="TIE0" speaker="SPK0" category="v" type="t" display-name="BcG: [v]">
 			<event start="T2" end="T0">-</event>
-			<event start="T488" end="T500">-</event>
 		</tier>
-		<tier id="TIE1" speaker="SPK1" category="v" type="t" display-name="MD: [v]">
+		<tier id="TIE1" speaker="SPK1" category="v" type="t" display-name="LjJ: [v]">
 			<event start="T0" end="T3">-</event>
 			<event start="T3" end="T4">-</event>
 			<event start="T4" end="T5">-</event>
 			<event start="T5" end="T6">-</event>
 			<event start="T6" end="T7">-</event>
 			<event start="T7" end="T8">-</event>
-			<event start="T11" end="T12">-</event>
-			<event start="T12" end="T13">-</event>
-			<event start="T23" end="T24">-</event>
-			<event start="T27" end="T28">-</event>
-			<event start="T34" end="T35">-</event>
-			<event start="T35" end="T36">-</event>
-			<event start="T36" end="T37">-</event>
-			<event start="T37" end="T38">-</event>
-			<event start="T38" end="T39">-</event>
-			<event start="T54" end="T55">-</event>
-			<event start="T55" end="T56">-</event>
-			<event start="T72" end="T73">-</event>
-			<event start="T73" end="T74">-</event>
-			<event start="T74" end="T75">-</event>
-			<event start="T75" end="T76">-</event>
-			<event start="T76" end="T77">-</event>
-			<event start="T94" end="T95">-</event>
-			<event start="T95" end="T96">-</event>
-			<event start="T107" end="T108">-</event>
-			<event start="T108" end="T109">-</event>
-			<event start="T109" end="T110">-</event>
-			<event start="T119" end="T120">-</event>
-			<event start="T120" end="T121">-</event>
-			<event start="T132" end="T133">-</event>
-			<event start="T133" end="T134">-</event>
-			<event start="T134" end="T135">-</event>
-			<event start="T138" end="T139">-</event>
-			<event start="T139" end="T140">-</event>
-			<event start="T162" end="T163">-</event>
-			<event start="T163" end="T164">-</event>
-			<event start="T164" end="T165">-</event>
-			<event start="T165" end="T166">-</event>
-			<event start="T173" end="T174">-</event>
-			<event start="T174" end="T175">-</event>
-			<event start="T183" end="T185">-</event>
-			<event start="T187" end="T188">-</event>
-			<event start="T188" end="T189">-</event>
-			<event start="T189" end="T190">-</event>
-			<event start="T190" end="T191">-</event>
-			<event start="T191" end="T192">-</event>
-			<event start="T192" end="T193">-</event>
-			<event start="T206" end="T207">-</event>
-			<event start="T210" end="T211">-</event>
-			<event start="T211" end="T212">-</event>
-			<event start="T216" end="T217">-</event>
-			<event start="T217" end="T218">-</event>
-			<event start="T218" end="T219">-</event>
-			<event start="T219" end="T220">-</event>
-			<event start="T220" end="T221">-</event>
-			<event start="T248" end="T249">-</event>
-			<event start="T257" end="T258">-</event>
-			<event start="T271" end="T272">-</event>
-			<event start="T281" end="T282">-</event>
-			<event start="T282" end="T283">-</event>
-			<event start="T283" end="T284">-</event>
-			<event start="T299" end="T300">-</event>
-			<event start="T300" end="T301">-</event>
-			<event start="T315" end="T316">-</event>
-			<event start="T316" end="T317">-</event>
-			<event start="T317" end="T318">-</event>
-			<event start="T333" end="T334">-</event>
-			<event start="T343" end="T344">-</event>
-			<event start="T344" end="T345">-</event>
-			<event start="T355" end="T356">-</event>
-			<event start="T356" end="T357">-</event>
-			<event start="T367" end="T368">-</event>
-			<event start="T368" end="T369">-</event>
-			<event start="T380" end="T381">-</event>
-			<event start="T381" end="T382">-</event>
-			<event start="T382" end="T383">-</event>
-			<event start="T398" end="T399">-</event>
-			<event start="T399" end="T400">-</event>
-			<event start="T400" end="T401">-</event>
-			<event start="T401" end="T402">-</event>
-			<event start="T402" end="T403">-</event>
-			<event start="T422" end="T423">-</event>
-			<event start="T423" end="T424">-</event>
-			<event start="T425" end="T426">-</event>
-			<event start="T431" end="T432">-</event>
-			<event start="T433" end="T434">-</event>
-			<event start="T442" end="T443">-</event>
-			<event start="T447" end="T448">-</event>
-			<event start="T449" end="T450">-</event>
-			<event start="T450" end="T451">-</event>
-			<event start="T451" end="T452">-</event>
-			<event start="T452" end="T453">-</event>
-			<event start="T453" end="T454">-</event>
-			<event start="T454" end="T455">-</event>
-			<event start="T455" end="T456">-</event>
-			<event start="T463" end="T464">-</event>
-			<event start="T464" end="T465">-</event>
-			<event start="T473" end="T474">-</event>
-			<event start="T478" end="T479">-</event>
-			<event start="T479" end="T480">-</event>
-			<event start="T480" end="T481">-</event>
-			<event start="T481" end="T482">-</event>
-			<event start="T482" end="T483">-</event>
-			<event start="T486" end="T487">-</event>
-			<event start="T487" end="T488">-</event>
-		</tier>
-		<tier id="TIE2" speaker="SPK2" category="v" type="t" display-name="SZ: [v]">
-			<event start="T6" end="T7">-</event>
 			<event start="T8" end="T9">-</event>
 			<event start="T9" end="T10">-</event>
-			<event start="T10" end="T11">-</event>
-			<event start="T13" end="T14">-</event>
 			<event start="T14" end="T15">-</event>
-			<event start="T15" end="T16">-</event>
-			<event start="T16" end="T17">-</event>
 			<event start="T17" end="T18">-</event>
 			<event start="T18" end="T19">-</event>
+			<event start="T24" end="T25">-</event>
+			<event start="T25" end="T26">-</event>
+			<event start="T27" end="T28">-</event>
+			<event start="T28" end="T29">-</event>
+			<event start="T29" end="T30">-</event>
+			<event start="T35" end="T36">-</event>
+			<event start="T36" end="T37">-</event>
+			<event start="T40" end="T41">-</event>
+			<event start="T41" end="T42">-</event>
+			<event start="T42" end="T43">-</event>
+			<event start="T43" end="T44">-</event>
+			<event start="T52" end="T53">-</event>
+			<event start="T55" end="T56">-</event>
+			<event start="T56" end="T57">-</event>
+			<event start="T57" end="T58">-</event>
+			<event start="T58" end="T59">-</event>
+			<event start="T61" end="T62">-</event>
+			<event start="T62" end="T63">-</event>
+			<event start="T67" end="T68">-</event>
+			<event start="T70" end="T71">-</event>
+			<event start="T73" end="T74">-</event>
+			<event start="T77" end="T78">-</event>
+			<event start="T78" end="T79">-</event>
+			<event start="T83" end="T84">-</event>
+			<event start="T87" end="T88">-</event>
+			<event start="T90" end="T91">-</event>
+			<event start="T94" end="T95">-</event>
+			<event start="T97" end="T98">-</event>
+			<event start="T98" end="T99">-</event>
+			<event start="T99" end="T100">-</event>
+			<event start="T100" end="T101">-</event>
+			<event start="T106" end="T107">-</event>
+			<event start="T107" end="T108">-</event>
+			<event start="T111" end="T112">-</event>
+			<event start="T115" end="T116">-</event>
+			<event start="T117" end="T118">-</event>
+			<event start="T1" end="T120">-</event>
+			<event start="T120" end="T121">-</event>
+			<event start="T124" end="T125">-</event>
+			<event start="T129" end="T130">-</event>
+			<event start="T130" end="T131">-</event>
+			<event start="T131" end="T132">-</event>
+			<event start="T132" end="T135">-</event>
+		</tier>
+		<tier id="TIE2" speaker="SPK2" category="v" type="t" display-name="IP: [v]">
+			<event start="T5" end="T6">-</event>
+			<event start="T10" end="T11">-</event>
+			<event start="T11" end="T12">-</event>
+			<event start="T12" end="T13">-</event>
+			<event start="T13" end="T14">-</event>
+			<event start="T15" end="T16">-</event>
+			<event start="T16" end="T17">-</event>
+			<event start="T29" end="T30">-</event>
+			<event start="T30" end="T31">-</event>
+			<event start="T31" end="T32">-</event>
+			<event start="T32" end="T33">-</event>
+			<event start="T33" end="T34">-</event>
+			<event start="T34" end="T35">-</event>
+			<event start="T37" end="T38">-</event>
+			<event start="T38" end="T39">-</event>
+			<event start="T39" end="T40">.</event>
+			<event start="T71" end="T72">-</event>
+			<event start="T72" end="T73">-</event>
+			<event start="T84" end="T85">-</event>
+			<event start="T85" end="T86">-</event>
+			<event start="T86" end="T87">-</event>
+			<event start="T88" end="T89">-</event>
+			<event start="T89" end="T90">-</event>
+			<event start="T91" end="T92">-</event>
+			<event start="T92" end="T93">-</event>
+			<event start="T93" end="T94">-</event>
+			<event start="T108" end="T109">-</event>
+			<event start="T109" end="T110">-</event>
+			<event start="T110" end="T111">-</event>
+			<event start="T112" end="T113">-</event>
+			<event start="T113" end="T114">-</event>
+			<event start="T114" end="T115">-</event>
+			<event start="T116" end="T117">-</event>
+			<event start="T121" end="T122">-</event>
+			<event start="T122" end="T123">-</event>
+			<event start="T123" end="T124">-</event>
+			<event start="T129" end="T130">-</event>
+		</tier>
+		<tier id="TIE3" speaker="SPK3" category="v" type="t" display-name="LjC: [v]">
 			<event start="T19" end="T20">-</event>
 			<event start="T20" end="T21">-</event>
 			<event start="T21" end="T22">-</event>
 			<event start="T22" end="T23">-</event>
-			<event start="T24" end="T25">-</event>
-			<event start="T25" end="T26">-</event>
+			<event start="T23" end="T24">.</event>
 			<event start="T26" end="T27">-</event>
-			<event start="T28" end="T29">-</event>
-			<event start="T29" end="T30">-</event>
-			<event start="T30" end="T31">-</event>
-			<event start="T31" end="T33">-</event>
-			<event start="T33" end="T34">-</event>
-			<event start="T39" end="T40">-</event>
-			<event start="T40" end="T42">-</event>
-			<event start="T42" end="T43">-</event>
-			<event start="T43" end="T44">-</event>
 			<event start="T44" end="T45">-</event>
 			<event start="T45" end="T46">-</event>
 			<event start="T46" end="T47">-</event>
@@ -684,848 +305,170 @@
 			<event start="T51" end="T52">-</event>
 			<event start="T52" end="T53">-</event>
 			<event start="T53" end="T54">-</event>
-			<event start="T56" end="T57">-</event>
-			<event start="T57" end="T58">-</event>
-			<event start="T58" end="T59">-</event>
+			<event start="T54" end="T55">-</event>
 			<event start="T59" end="T60">-</event>
 			<event start="T60" end="T61">-</event>
-			<event start="T61" end="T62">-</event>
-			<event start="T62" end="T63">-</event>
 			<event start="T63" end="T64">-</event>
 			<event start="T64" end="T65">-</event>
 			<event start="T65" end="T66">-</event>
 			<event start="T66" end="T67">-</event>
-			<event start="T67" end="T68">-</event>
 			<event start="T68" end="T69">-</event>
 			<event start="T69" end="T70">-</event>
-			<event start="T70" end="T71">-</event>
-			<event start="T71" end="T72">-</event>
-			<event start="T77" end="T78">-</event>
-			<event start="T78" end="T79">-</event>
+			<event start="T74" end="T75">-</event>
+			<event start="T75" end="T76">-</event>
+			<event start="T76" end="T77">-</event>
 			<event start="T79" end="T80">-</event>
 			<event start="T80" end="T81">-</event>
 			<event start="T81" end="T82">-</event>
 			<event start="T82" end="T83">-</event>
-			<event start="T83" end="T84">-</event>
-			<event start="T84" end="T85">-</event>
-			<event start="T85" end="T86">-</event>
-			<event start="T86" end="T87">-</event>
-			<event start="T87" end="T88">-</event>
-			<event start="T88" end="T89">-</event>
-			<event start="T89" end="T90">-</event>
-			<event start="T90" end="T91">-</event>
-			<event start="T91" end="T92">-</event>
-			<event start="T92" end="T93">-</event>
-			<event start="T93" end="T94">-</event>
 			<event start="T95" end="T96">-</event>
 			<event start="T96" end="T97">-</event>
-			<event start="T97" end="T98">-</event>
-			<event start="T98" end="T99">-</event>
-			<event start="T99" end="T100">-</event>
-			<event start="T100" end="T101">-</event>
 			<event start="T101" end="T102">-</event>
 			<event start="T102" end="T103">-</event>
 			<event start="T103" end="T104">-</event>
 			<event start="T104" end="T105">-</event>
 			<event start="T105" end="T106">-</event>
-			<event start="T106" end="T107">-</event>
-			<event start="T110" end="T111">-</event>
-			<event start="T111" end="T112">-</event>
-			<event start="T112" end="T113">-</event>
-			<event start="T113" end="T114">-</event>
-			<event start="T114" end="T115">-</event>
-			<event start="T115" end="T116">-</event>
-			<event start="T116" end="T117">-</event>
-			<event start="T117" end="T118">-</event>
 			<event start="T118" end="T119">-</event>
-			<event start="T121" end="T122">-</event>
-			<event start="T122" end="T123">-</event>
-			<event start="T123" end="T124">-</event>
-			<event start="T124" end="T125">-</event>
+			<event start="T119" end="T1">-</event>
 			<event start="T125" end="T126">-</event>
 			<event start="T126" end="T127">-</event>
 			<event start="T127" end="T128">-</event>
 			<event start="T128" end="T129">-</event>
 			<event start="T129" end="T130">-</event>
-			<event start="T130" end="T132">-</event>
-			<event start="T135" end="T136">-</event>
-			<event start="T136" end="T137">-</event>
-			<event start="T137" end="T138">-</event>
-			<event start="T140" end="T141">-</event>
-			<event start="T141" end="T142">-</event>
-			<event start="T142" end="T143">-</event>
-			<event start="T143" end="T144">-</event>
-			<event start="T144" end="T145">-</event>
-			<event start="T145" end="T146">-</event>
-			<event start="T146" end="T147">-</event>
-			<event start="T147" end="T148">-</event>
-			<event start="T148" end="T149">-</event>
-			<event start="T149" end="T150">-</event>
-			<event start="T150" end="T151">-</event>
-			<event start="T151" end="T152">-</event>
-			<event start="T152" end="T153">-</event>
-			<event start="T153" end="T154">-</event>
-			<event start="T154" end="T155">-</event>
-			<event start="T155" end="T156">-</event>
-			<event start="T156" end="T157">-</event>
-			<event start="T157" end="T158">-</event>
-			<event start="T158" end="T159">-</event>
-			<event start="T159" end="T160">-</event>
-			<event start="T160" end="T161">-</event>
-			<event start="T161" end="T162">-</event>
-			<event start="T166" end="T167">-</event>
-			<event start="T167" end="T168">-</event>
-			<event start="T168" end="T169">-</event>
-			<event start="T169" end="T170">-</event>
-			<event start="T170" end="T171">-</event>
-			<event start="T171" end="T172">-</event>
-			<event start="T172" end="T173">-</event>
-			<event start="T173" end="T174">-</event>
-			<event start="T175" end="T176">-</event>
-			<event start="T176" end="T177">-</event>
-			<event start="T177" end="T178">-</event>
-			<event start="T178" end="T179">-</event>
-			<event start="T179" end="T180">-</event>
-			<event start="T180" end="T181">-</event>
-			<event start="T181" end="T182">-</event>
-			<event start="T182" end="T183">-</event>
-			<event start="T185" end="T187">-</event>
-			<event start="T193" end="T194">-</event>
-			<event start="T194" end="T195">-</event>
-			<event start="T195" end="T196">-</event>
-			<event start="T196" end="T197">-</event>
-			<event start="T197" end="T198">-</event>
-			<event start="T198" end="T199">-</event>
-			<event start="T199" end="T200">-</event>
-			<event start="T200" end="T201">-</event>
-			<event start="T201" end="T202">-</event>
-			<event start="T202" end="T203">-</event>
-			<event start="T203" end="T204">-</event>
-			<event start="T204" end="T205">-</event>
-			<event start="T205" end="T206">-</event>
-			<event start="T207" end="T208">-</event>
-			<event start="T208" end="T209">-</event>
-			<event start="T209" end="T210">-</event>
-			<event start="T212" end="T213">-</event>
-			<event start="T213" end="T214">-</event>
-			<event start="T214" end="T215">-</event>
-			<event start="T215" end="T216">-</event>
-			<event start="T221" end="T222">-</event>
-			<event start="T222" end="T223">-</event>
-			<event start="T223" end="T224">-</event>
-			<event start="T224" end="T225">-</event>
-			<event start="T225" end="T226">-</event>
-			<event start="T226" end="T227">-</event>
-			<event start="T227" end="T228">-</event>
-			<event start="T228" end="T229">-</event>
-			<event start="T229" end="T230">-</event>
-			<event start="T230" end="T231">-</event>
-			<event start="T231" end="T232">-</event>
-			<event start="T232" end="T233">-</event>
-			<event start="T233" end="T234">-</event>
-			<event start="T234" end="T235">-</event>
-			<event start="T235" end="T236">-</event>
-			<event start="T236" end="T237">-</event>
-			<event start="T237" end="T238">-</event>
-			<event start="T238" end="T239">-</event>
-			<event start="T239" end="T240">-</event>
-			<event start="T240" end="T241">-</event>
-			<event start="T241" end="T242">-</event>
-			<event start="T242" end="T243">-</event>
-			<event start="T243" end="T244">-</event>
-			<event start="T244" end="T245">-</event>
-			<event start="T245" end="T246">-</event>
-			<event start="T246" end="T247">-</event>
-			<event start="T247" end="T248">-</event>
-			<event start="T249" end="T250">-</event>
-			<event start="T250" end="T251">-</event>
-			<event start="T251" end="T252">-</event>
-			<event start="T252" end="T253">-</event>
-			<event start="T253" end="T254">-</event>
-			<event start="T254" end="T255">-</event>
-			<event start="T255" end="T256">-</event>
-			<event start="T256" end="T257">-</event>
-			<event start="T258" end="T259">-</event>
-			<event start="T259" end="T260">-</event>
-			<event start="T260" end="T261">-</event>
-			<event start="T261" end="T262">-</event>
-			<event start="T262" end="T263">-</event>
-			<event start="T263" end="T264">-</event>
-			<event start="T264" end="T265">-</event>
-			<event start="T265" end="T266">-</event>
-			<event start="T266" end="T267">-</event>
-			<event start="T267" end="T268">-</event>
-			<event start="T268" end="T269">-</event>
-			<event start="T269" end="T270">-</event>
-			<event start="T270" end="T271">-</event>
-			<event start="T272" end="T273">-</event>
-			<event start="T273" end="T274">-</event>
-			<event start="T274" end="T275">-</event>
-			<event start="T275" end="T276">-</event>
-			<event start="T276" end="T277">-</event>
-			<event start="T277" end="T278">-</event>
-			<event start="T278" end="T279">-</event>
-			<event start="T279" end="T280">-</event>
-			<event start="T280" end="T281">-</event>
-			<event start="T284" end="T285">-</event>
-			<event start="T285" end="T286">-</event>
-			<event start="T286" end="T287">-</event>
-			<event start="T287" end="T288">-</event>
-			<event start="T288" end="T289">-</event>
-			<event start="T289" end="T290">-</event>
-			<event start="T290" end="T291">-</event>
-			<event start="T291" end="T292">-</event>
-			<event start="T292" end="T293">-</event>
-			<event start="T293" end="T295">-</event>
-			<event start="T295" end="T296">-</event>
-			<event start="T296" end="T297">-</event>
-			<event start="T297" end="T298">-</event>
-			<event start="T298" end="T299">-</event>
-			<event start="T301" end="T302">-</event>
-			<event start="T302" end="T303">-</event>
-			<event start="T303" end="T304">-</event>
-			<event start="T304" end="T305">-</event>
-			<event start="T305" end="T306">-</event>
-			<event start="T306" end="T307">-</event>
-			<event start="T307" end="T308">-</event>
-			<event start="T308" end="T309">-</event>
-			<event start="T309" end="T310">-</event>
-			<event start="T310" end="T311">-</event>
-			<event start="T311" end="T312">-</event>
-			<event start="T312" end="T313">-</event>
-			<event start="T313" end="T314">-</event>
-			<event start="T314" end="T315">-</event>
-			<event start="T318" end="T319">-</event>
-			<event start="T319" end="T320">-</event>
-			<event start="T320" end="T321">-</event>
-			<event start="T321" end="T322">-</event>
-			<event start="T322" end="T323">-</event>
-			<event start="T323" end="T324">-</event>
-			<event start="T324" end="T325">-</event>
-			<event start="T325" end="T326">-</event>
-			<event start="T326" end="T327">-</event>
-			<event start="T327" end="T328">-</event>
-			<event start="T328" end="T329">-</event>
-			<event start="T329" end="T330">-</event>
-			<event start="T330" end="T331">-</event>
-			<event start="T331" end="T332">-</event>
-			<event start="T332" end="T333">-</event>
-			<event start="T333" end="T334">-</event>
-			<event start="T334" end="T335">-</event>
-			<event start="T335" end="T336">-</event>
-			<event start="T336" end="T337">-</event>
-			<event start="T337" end="T338">-</event>
-			<event start="T338" end="T339">-</event>
-			<event start="T339" end="T340">-</event>
-			<event start="T340" end="T341">-</event>
-			<event start="T341" end="T342">-</event>
-			<event start="T342" end="T343">-</event>
-			<event start="T345" end="T346">-</event>
-			<event start="T346" end="T347">-</event>
-			<event start="T347" end="T348">-</event>
-			<event start="T348" end="T349">-</event>
-			<event start="T349" end="T350">-</event>
-			<event start="T350" end="T351">-</event>
-			<event start="T351" end="T352">-</event>
-			<event start="T352" end="T353">-</event>
-			<event start="T353" end="T354">-</event>
-			<event start="T354" end="T355">-</event>
-			<event start="T357" end="T358">-</event>
-			<event start="T358" end="T359">-</event>
-			<event start="T359" end="T360">-</event>
-			<event start="T360" end="T361">-</event>
-			<event start="T361" end="T362">-</event>
-			<event start="T362" end="T363">-</event>
-			<event start="T363" end="T364">-</event>
-			<event start="T364" end="T365">-</event>
-			<event start="T365" end="T366">-</event>
-			<event start="T366" end="T367">-</event>
-			<event start="T369" end="T370">-</event>
-			<event start="T370" end="T371">-</event>
-			<event start="T371" end="T372">-</event>
-			<event start="T372" end="T373">-</event>
-			<event start="T373" end="T374">-</event>
-			<event start="T374" end="T375">-</event>
-			<event start="T375" end="T376">-</event>
-			<event start="T376" end="T377">-</event>
-			<event start="T377" end="T378">-</event>
-			<event start="T378" end="T379">-</event>
-			<event start="T379" end="T380">-</event>
-			<event start="T383" end="T384">-</event>
-			<event start="T384" end="T385">-</event>
-			<event start="T385" end="T386">-</event>
-			<event start="T386" end="T387">-</event>
-			<event start="T387" end="T388">-</event>
-			<event start="T388" end="T389">-</event>
-			<event start="T389" end="T390">-</event>
-			<event start="T390" end="T391">-</event>
-			<event start="T391" end="T392">-</event>
-			<event start="T392" end="T393">-</event>
-			<event start="T393" end="T394">-</event>
-			<event start="T394" end="T395">-</event>
-			<event start="T395" end="T396">-</event>
-			<event start="T396" end="T397">-</event>
-			<event start="T397" end="T398">-</event>
-			<event start="T403" end="T404">-</event>
-			<event start="T404" end="T405">-</event>
-			<event start="T405" end="T406">-</event>
-			<event start="T406" end="T407">-</event>
-			<event start="T407" end="T408">-</event>
-			<event start="T408" end="T409">-</event>
-			<event start="T409" end="T410">-</event>
-			<event start="T410" end="T32">-</event>
-			<event start="T32" end="T1">-</event>
-			<event start="T1" end="T41">-</event>
-			<event start="T41" end="T131">-</event>
-			<event start="T131" end="T184">-</event>
-			<event start="T184" end="T186">-</event>
-			<event start="T186" end="T294">-</event>
-			<event start="T294" end="T411">-</event>
-			<event start="T411" end="T412">-</event>
-			<event start="T412" end="T413">-</event>
-			<event start="T413" end="T414">-</event>
-			<event start="T414" end="T415">-</event>
-			<event start="T415" end="T416">-</event>
-			<event start="T416" end="T417">-</event>
-			<event start="T417" end="T418">-</event>
-			<event start="T418" end="T419">-</event>
-			<event start="T419" end="T420">-</event>
-			<event start="T420" end="T421">-</event>
-			<event start="T421" end="T422">-</event>
-			<event start="T424" end="T425">-</event>
-			<event start="T425" end="T426">-</event>
-			<event start="T426" end="T427">-</event>
-			<event start="T427" end="T428">-</event>
-			<event start="T428" end="T429">-</event>
-			<event start="T429" end="T430">-</event>
-			<event start="T430" end="T431">-</event>
-			<event start="T432" end="T433">-</event>
-			<event start="T434" end="T435">-</event>
-			<event start="T435" end="T436">-</event>
-			<event start="T436" end="T437">-</event>
-			<event start="T437" end="T438">-</event>
-			<event start="T438" end="T439">-</event>
-			<event start="T439" end="T440">-</event>
-			<event start="T440" end="T441">-</event>
-			<event start="T441" end="T442">-</event>
-			<event start="T443" end="T444">-</event>
-			<event start="T444" end="T445">-</event>
-			<event start="T445" end="T446">-</event>
-			<event start="T446" end="T447">-</event>
-			<event start="T448" end="T449">-</event>
-			<event start="T456" end="T457">-</event>
-			<event start="T457" end="T458">-</event>
-			<event start="T458" end="T459">-</event>
-			<event start="T459" end="T460">-</event>
-			<event start="T460" end="T461">-</event>
-			<event start="T461" end="T462">-</event>
-			<event start="T462" end="T463">-</event>
-			<event start="T465" end="T466">-</event>
-			<event start="T466" end="T467">-</event>
-			<event start="T467" end="T468">-</event>
-			<event start="T468" end="T469">-</event>
-			<event start="T469" end="T470">-</event>
-			<event start="T470" end="T471">-</event>
-			<event start="T471" end="T472">-</event>
-			<event start="T472" end="T473">-</event>
-			<event start="T474" end="T475">-</event>
-			<event start="T475" end="T476">-</event>
-			<event start="T476" end="T477">-</event>
-			<event start="T477" end="T478">-</event>
-			<event start="T482" end="T483">-</event>
-			<event start="T483" end="T484">-</event>
-			<event start="T484" end="T485">-</event>
-			<event start="T485" end="T486">-</event>
 		</tier>
 		<tier id="whisper" category="v" type="t" display-name="ASR - whisper">
-			<event start="T2" end="T0"> Top 10 najboljih krivičkih krivička.</event>
-			<event start="T0" end="T3"> Dobar dan svima koji nas danas gledate u malo drugačijem izdanju emisije 15 minuta.</event>
-			<event start="T3" end="T4"> On nije pobedio Novogodišnjoj pesmi za Evroviziju, ali je svakako pokupio najviše glasova publike.</event>
-			<event start="T4" end="T5"> Pozadnjih dana bilo je dosta komentara na mrežama i u medijima o njegovom ponašanju, utisku koji je ostavio na publiku.</event>
-			<event start="T5" end="T6"> Poreklo mi je iz Vranja, živi u Beogradu. Moj gost je danas Stefan Zdravković ili princ od Vranje.</event>
-			<event start="T6" end="T7"> Dobar dan Stefani i hvala na izdvojenom vremenu i na ugostovanju. Dobar dan.</event>
-			<event start="T7" end="T8"> Jesi li uspeo da odmoriš malo nakon takmičenja?</event>
-			<event start="T8" end="T9"> Pre svega hvala tebi i hvala Južnim vestima i čitavom jugu na prilici.</event>
-			<event start="T9" end="T10"> da odmorim, iskreno ne, ali nije ni poenta da odmorim sada kada su nam se vrat otvorili, kada smo dobili toliko</event>
-			<event start="T10" end="T11"> podrušku publike sad se najveće čekaju da se radi.</event>
-			<event start="T11" end="T12"> Da li ti se nakon takmičenja promenio privatni život? Da li si uspela da sumiraš utiske</event>
-			<event start="T12" end="T13"> Koji je generalni otisak? Šta je najupećepljiviji otisak sa dr. Kvičenjem?</event>
-			<event start="T13" end="T14"> Pa, privatnija život se promenio u nekom smislu da sim prosto prisutni u medijima, a imam dosta manje vremena za neke ostane stvari</event>
-			<event start="T14" end="T15"> i za porodicu i za devojku i za spremanje hrane, tako da ovo je dosta više zavisimo</event>
-			<event start="T15" end="T16"> od fast fooda u poslije vreme nego ikad u životu. Ali ove to su sve slatke muke jer ovo je kao što smo i malo pripričali</event>
-			<event start="T16" end="T17"> Generalno sam čitav život radio i čekao ovaj moment da bi danas mogao da se ljudima predstavim</event>
-			<event start="T17" end="T18"> u najboljem smislu. Tako da paralelno sa tim teže da mi se utici slag, no</event>
-			<event start="T18" end="T19"> jer sam konstantno pokretuo i u nekakvom poslu.</event>
-			<event start="T19" end="T20"> Ali ono što se sleglo jeste na nivou ogromne zahvalnosti narodu</event>
-			<event start="T20" end="T21"> i podušku koju sam dobio, iskreno nisam očekivao u tolikoj meri</event>
-			<event start="T21" end="T22"> još uvijek nisam svestan koliko je zapravo ljudi od srca glasilo i podržavalo čitavu tu priču i zaista</event>
-			<event start="T22" end="T23"> su me zadužili na neki način da do kraja svog života budem tu i da srcem budem tu za njih.</event>
-			<event start="T23" end="T24"> Jel upravo to najupački otisak nakon takmičanja podrška koju si dobio od ljudi i od publici?</event>
-			<event start="T24" end="T25"> Definitivno. Ja znam koliko je teško da postanete miljenik publike u Srbiji</event>
-			<event start="T25" end="T26"> kada se tako nešto desi na neki način u tako kratkom periodu, zaista je velika stvar.</event>
-			<event start="T26" end="T27"> Tako da to će mi vrlo vjerovatno biti najveći utisak u muzičkoj karijeri još dug.</event>
-			<event start="T27" end="T28"> Da li bi se opet kandidovao, da li bi se opet prijavio za takve činjenja?</event>
-			<event start="T28" end="T29"> Pa vrlo verovatno da da. Meni želja da predstavljam Srbiju bilo gde u svetu kao što je to bilo</event>
-			<event start="T29" end="T30"> i do sada, s obzirom na to da je Eurovizija najveće muzičko takmičenje na svetu.</event>
-			<event start="T30" end="T31"> a bilo bi mi zadovoljstvo da tako nešto uradim u budućnosti</event>
-			<event start="T31" end="T33"> Sad da li ću se prijaviti konkretno za sljedeću pesmu za proviziju još uvek ne znam jer</event>
-			<event start="T33" end="T34"> Još uvek nestam ku deuda, al'</event>
-			<event start="T34" end="T35"> Recigni pesma cveca isto kao i ti si govorio već o tome</event>
-			<event start="T35" end="T36"> inspirisana je legendom o Belom mostu u Vranju.</event>
-			<event start="T36" end="T37"> Kojim motivima ste se vodili dok ste radili na pesmi? Pitam te to zbog toga zato što deluje kao da si...</event>
-			<event start="T37" end="T38"> ciljano želeo da usmeriš pažnju ka vranju. Šta je ono što te vuče ka jugu i ka vranju?</event>
-			<event start="T38" end="T39"> nakon 20 godina jer ti si, ako se ne varam, kao dete otišao u Beograd i od onda živiš tamo.</event>
-			<event start="T39" end="T40"> Da, pa ja sam kao dete u radnju imao priliku da se susretem samo sa čistim, prelepim i ljubavnim emocijama,</event>
-			<event start="T40" end="T42"> kao dete sam imao priliku da imam prve ljubave, prve simpatite, prve leptiriće prve te neke lepe stvari</event>
-			<event start="T42" end="T43"> koje vas vezuju, za prostor odakle dolazite, za porodicu, za prve prijatelje koje steknete u životu.</event>
-			<event start="T43" end="T44"> će ono prvo čisto, lepo što se dešava,</event>
-			<event start="T44" end="T45"> I onda kada sam otišao za Beograd, ja sam prvih nekoliko godina svaki put plakao kada bih</event>
-			<event start="T45" end="T46"> odlaze iz zbora Stankovića i prosto će to zaovek biti tu mnogo, sve to lepo što se u meni</event>
-			<event start="T46" end="T47"> gdeštvo poteče iz vranja i apsolutno mislim da sam imao</event>
-			<event start="T47" end="T48"> detinstvo na zavednom nivoju i da su prosto i moja generacija si igrala</event>
-			<event start="T48" end="T49"> na neki drugačiji način, više smo vremeno provodili na ulici, družili se, zezali su u svakom smislu.</event>
-			<event start="T49" end="T50"> Tako da je to nešto što me vezuje i što će me uvek vizivati. Ponosan sam na svoje korene</event>
-			<event start="T50" end="T51"> Smatram da je moj nastup na Pesme za reviziju između ostalo kao poruka imao da ljudi uvek treba da budu svesni toga</event>
-			<event start="T51" end="T52"> odakle dolaze, šta to nosi sa sobom. Generalno smatram da jug Srbije i Vranje zasluže mnogo više</event>
-			<event start="T52" end="T53"> medijske pažnje, priča o Belom mostu je samo jedna u nizu koje ovaj grad nosi sa sobom kao i čitav jug</event>
-			<event start="T53" end="T54"> I prosto ako imamo Romeo i Juliju koje prihvatamo sa zapada, zašto ne bi smo uzeli Stojan i Ajašu i stavili u film, na primjer?</event>
-			<event start="T54" end="T55"> hoćeš ti da ispričaš priču o Belom mostu, predpostavljam da to već i</event>
-			<event start="T55" end="T56"> Rapci na grani znaju, ali ja to za gledalce koji možda ne znaju, vemo se radi šta je poslednji na prvi, koji su motivi.</event>
-			<event start="T56" end="T57"> Biću kratak što se toga tiče, ja sam kao dete mnogo puta čuo priču o Belom mostu</event>
-			<event start="T57" end="T58"> i to je zabranjen ljubav između Turkinja, Ajaša i Stojana</event>
-			<event start="T58" end="T59"> Ta njihova motiva, odnosno ljubava kao motiv, je nešto što je mene vodi, što će me uvek voditi</event>
-			<event start="T59" end="T60"> pa ovaj, a s obzirom na to da je Vranje dugo, kao i čitava Srbija, bilo pod Osmoskim carstvom,</event>
-			<event start="T60" end="T61"> a mi smo priču o Belom mostu htjeli nekako da povežemo</event>
-			<event start="T61" end="T62"> pričavši i o ljubavi i o toj tragišnji ljubavi u nekakvoj borbi</event>
-			<event start="T62" end="T63"> kako bismo došli do nečega što želimo.</event>
-			<event start="T63" end="T64"> Tako da nekako smo želeli da iskoristimo i taj srpski zvuk,</event>
-			<event start="T64" end="T65"> jer pojavljaju se ih harmonika, ima tu dosta nekih etnoe elementa, a s druge strane,</event>
-			<event start="T65" end="T66"> Imaju dosta orijentalnih zvukova i tu smo dosta slobode sebi dali</event>
-			<event start="T66" end="T67"> u pravilnju te pesme, sa obzirom na to da je ona bila pisana konkretno za Euroviziju,</event>
-			<event start="T67" end="T68"> što može da se vidi jer prosto ispunjava taj eurovizijski format minutaža</event>
-			<event start="T68" end="T69"> pre svega da traje tri minuta. S druge strane, s obzirom na to da smo se zaista borili</event>
-			<event start="T69" end="T70"> da pobjedimo na tome. Odlučili smo se da možda ključna reč bude Habibi</event>
-			<event start="T70" end="T71"> jer je internacionalna reč i prosto smo bili svestni da ako bi smo otešli da bi to vrlo vrlo vrlo bila jedna od najvećih haduta</event>
-			<event start="T71" end="T72"> da se nema ne takvi interesi,</event>
-			<event start="T72" end="T73"> Zvinušta, sam te prigrenula i izazvala različita i podeljena mišljenja i komentara</event>
-			<event start="T73" end="T74"> Na mrežama i sam taj istočnjočki melos za koji ste se odlučili.</event>
-			<event start="T74" end="T75"> Osim pesme, dosta se govori proteklih dana i o scenografiji,</event>
-			<event start="T75" end="T76"> kostimima, koreografiji, što je tebi lično bilo najteže od</event>
-			<event start="T76" end="T77"> toga da iznesneš.</event>
-			<event start="T77" end="T78"> Pa nije mi bilo teško, ima se sreće da smo se rađavili stvarno sa vrlo kunskim timom,</event>
-			<event start="T78" end="T79"> kompozitor pesme Dušan Bačić, da pomenim i producenta koji je radio na Ražmanu D. Nikolić.</event>
-			<event start="T79" end="T80"> dugo godina sarađuju sa koreografom Marlonom Sestratišim i on je čovek koji je u svojoj karijeri imao prilike da stvarno sarađuje sa</event>
-			<event start="T80" end="T81"> svjetskim zvezdama i ove, eto, i za ljudi koji to ništa imali prilike da čuju, radio je sa Whitney Houston i Lady Gaga-om,</event>
-			<event start="T81" end="T82"> I u sklopu svoje neke ekipe, Alen je imao prijateljice i plasačice koji su nam se pridružili na same pesme za reviziju.</event>
-			<event start="T82" end="T83"> Ja volim da pomenim i te cure, pošto su dali stvarno svu energiju, krvi, znoje, da to izgleda kako izgledalo.</event>
-			<event start="T83" end="T84"> Lana Čleković, Lana Antunović, Sara Klepac i Petar Hajduk. O toj Petri Hajduk sam vam ovoj najviše pričao jer prosto</event>
-			<event start="T84" end="T85"> devojka trenutno u Londonu radi na filmu sa Rihannom Grande, igrala je sa Robbie Williamsom sa stvarno velikim svetskim imenima.</event>
-			<event start="T85" end="T86"> Tako da kada imate takav, ti pored sebe ne brinete o samo kuriografija,</event>
-			<event start="T86" end="T87"> ako imate taj osjećaj sigurnosti sa njima dok ste na sceni.</event>
-			<event start="T87" end="T88"> Bilo je naravno tu izazovnih stvari jer kada se krećete i kada pevate</event>
-			<event start="T88" end="T89"> ne razmišljate samo o pokritima, razmišljate i o tome gde su kamere kada se</event>
-			<event start="T89" end="T90"> šta dešava, kako ćete to vokalno iznesete. Pesma je samo po sebi jako teško i zahtjena za pevanje jer ima previše dinamika</event>
-			<event start="T90" end="T91"> različitih žanrova pevanja. Tako da ono što je nama to bilo najbitnije je da imamo ogroman broj proba</event>
-			<event start="T91" end="T92"> s obzirom na to da jedan deo ekipe, odnosno plesači su bili u Zagrebu, ja sam često morao da odlazim za Zagreb</event>
-			<event start="T92" end="T93"> treba bi da se vraćam nazad i na probu u kostima i razno razna snimanja</event>
-			<event start="T93" end="T94"> pokrivalica</event>
-			<event start="T94" end="T95"> Koliko dobro se trajalo, same probe i pripreme, ono što je super.</event>
-			<event start="T95" end="T96"> Evo ovako, mi smo u Zagrebu pravili audiciju za plesačice mesec dana</event>
-			<event start="T96" end="T97"> pre nego što je RTS objavio ko je prošao. Znači mi smo automatiski u startu išli na sve ili ništa.</event>
-			<event start="T97" end="T98"> ogroman rizik smo tada preuzeli,</event>
-			<event start="T98" end="T99"> I prosto Alan Sestrcic, kao što sam rekao, i Dušan Bačić su dugogodešni saradnici i onda smo nekako nastavili tu dugogodešnu saradnju.</event>
-			<event start="T99" end="T100"> zbog toga smo išli i ka Zagrebu. A sama pesma je počela da se radi negde tokom leta.</event>
-			<event start="T100" end="T101"> Tako da ja sam već tada U priči sa Dušanom i Dekijem Iznao svoju želju Da želim da se svetlo okrene ka vranju</event>
-			<event start="T101" end="T102"> Želim da se tu izbaci moment tradicije i da nekako ljudima se vokalno prikažem, da prosto pokažem da mogu da se snalazim</event>
-			<event start="T102" end="T103"> u različitim žanrovima. I onda smo tu s druge strane sve to stavili u Eurovizijski kontekst,</event>
-			<event start="T103" end="T104"> jaz sam se obukao kostim kakvog princa, prosto smo pratili priču o pseudonima,</event>
-			<event start="T104" end="T105"> a cure su imale nošnje koje su na neki način bile inspirisane vranjanskom folklornom nošnjom.</event>
-			<event start="T105" end="T106"> Takođe uz jedan moment modernizacije i umetničke slobode.</event>
-			<event start="T106" end="T107"> Tako da smo spojili na neki način istok i zapad.</event>
-			<event start="T107" end="T108"> Samo si pomenuo, ja ti to nisam pitala na početku, pseudonim Parinca.</event>
-			<event start="T108" end="T109"> kako je došlo do toga da</event>
-			<event start="T109" end="T110"> ti u javnosti buduš poznat kao princ od zranje ili samo princ.</event>
-			<event start="T110" end="T111"> Pa oko 2015. ili 14. uvek mešam, ne mogu da se setim točno,</event>
-			<event start="T111" end="T112"> tada su mi stvarno makom prijatelji govorili da izgledam kao Prince of Disney i bike</event>
-			<event start="T112" end="T113"> i onda je bila fora kao hahaha, princ, ali princ od vraje.</event>
-			<event start="T113" end="T114"> I to je bilo u trenutku kada sam ja bio član raznoraznih benda, još uvek nisam bio do sebe u svojoj karijeri.</event>
-			<event start="T114" end="T115"> I na drućtini mrežama se nazve odako.</event>
-			<event start="T115" end="T116"> bukvalno iz šale i nekako kada sam počeo da se eksponiram više, ljudi su se uhvatili za to prince odranje,</event>
-			<event start="T116" end="T117"> postavljamo prijemčivo. Kasnije su ljudi u mediji imali više osljedavaja sa Prinče</event>
-			<event start="T117" end="T118"> hej prinče i prosto smo samo shvatili da to ljudima primičivi i ostali smo na princ</event>
-			<event start="T118" end="T119"> ali princ odranje će uvijek biti deo i društvenih mreža i mog identiteta, tako da...</event>
-			<event start="T119" end="T120"> Dakle primilo sam među ljudima. Srećno. Udaljili smo se od Eurovizije, ali hoću da te pitam da li si šta misliš o pobedničkoj pesmi?</event>
-			<event start="T120" end="T121"> i ko su bili tvoji favoriti ili favorici na ovogodišnjem takvičim.</event>
-			<event start="T121" end="T122"> Pa, look blacki važa se favorita od samog starta, dakle u</event>
-			<event start="T122" end="T123"> Među favoritima se naštavno pet ili šest kompozicija i performera.</event>
-			<event start="T123" end="T124"> Tako da smo na neki način u startu mogli da pretpostavimo ko će eventualno imati tu priliku da prestaje Srbiju u Liverpoolu.</event>
-			<event start="T124" end="T125"> Lukina pesma jeste moderna i možda izlazi iz neke zone kojima je široj masi poznata.</event>
-			<event start="T125" end="T126"> Mi smatram da treba dosta hrabrosti za to što je Luka uradio i ja ću lično dati podušku tom momko zato što predstavlja našu državu.</event>
-			<event start="T126" end="T127"> I zavisno smatram da je pojante bilo kog umetnika da ljude spaja i da apsolutno treba čoveku olakšati taj moment</event>
-			<event start="T127" end="T128"> jer prosto svi smo došavši na tu pesmu za reviziju i znali kakve su pravila.</event>
-			<event start="T128" end="T129"> gde će tu biti 50% žiri, 50% publike i...</event>
-			<event start="T129" end="T130"> prosto smo svi ušli tu sa jednakim</event>
-			<event start="T130" end="T132"> očekivanjima da tako kažem, smatram da pritisak koji sve to nose sa sobom možemo da molakšemo i ja bih se lično uvek borio za to da dečko dama podrušku.</event>
-			<event start="T132" end="T133"> Recimo mi je posle takmičenja bilo dosta polemike o tome kako ti je pobjeda izmakla za 2 po 1.</event>
-			<event start="T133" end="T134"> Neki opšti utisak je da je ljudima bilo žao, a posebno da im je bilo žao tek onda što su dva pojena u pitanju, naročito vranjancima.</event>
-			<event start="T134" end="T135"> Kako ti posmatraš na to? Kako si ti doživeo to?</event>
-			<event start="T135" end="T136"> Ja sam prolazio kroz, pre svega, veliki pritisak na samoj sceni</event>
-			<event start="T136" end="T137"> kako će to izgledati, da li ćemo sve uspeti da uradimo kako treba, da li je čitav taj narod koji će nas podržati</event>
-			<event start="T137" end="T138"> može da stani iza svega toga. Tako da... Moram priznati da se samo time bavim u tom trenutku.</event>
-			<event start="T138" end="T139"> Kažem, jesi li pratio takmičenje ostalih zemalja?</event>
-			<event start="T139" end="T140"> Kako je to izgleda?</event>
-			<event start="T140" end="T141"> Zapravo ne. Doslovno je meni čitav taj period bio apsolutno fokus na nastupu,</event>
-			<event start="T141" end="T142"> koreografiji na pevanju.</event>
-			<event start="T142" end="T143"> Ogroman pritisak je tamo, znate kako, za ljudi koji ne znaju, recimo, kada dođe polofinalna veče,</event>
-			<event start="T143" end="T144"> Vi nastupate dva puta i u polofinalu i ako prođete u finale.</event>
-			<event start="T144" end="T145"> Dakle, prvi nastup je popodne koji je isključio za žiri, tako da vi slušanski morate doći na rts.</event>
-			<event start="T145" end="T146"> dosta ranije imate pripremu, opet šminka, frizura, kostim</event>
-			<event start="T146" end="T147"> opet proba svakog tima za sebe, dogovor,</event>
-			<event start="T147" end="T148"> tada mediji još uvijek ne dolaze i onda izlazite na scenu gde idete jedan za drugim.</event>
-			<event start="T148" end="T149"> a ogromna količina energije, adrenalina se tu izluči i onda nekako do te same finalne večeri ili samog</event>
-			<event start="T149" end="T150"> polofinala, vi morate da naučite kako da čuvate tu energiju, onda</event>
-			<event start="T150" end="T151"> odmarate svako što se stavljate gde stigne</event>
-			<event start="T151" end="T152"> A opet provera kostima, šminke, frizure, jedemo tamo u kantini.</event>
-			<event start="T152" end="T153"> E onda dolaze mediji i onda to ume da bude isto jako naporno</event>
-			<event start="T153" end="T154"> s obzirom na to da je ova pesma za reviziju bila najproprečenija medijski ikada u istoriji.</event>
-			<event start="T154" end="T155"> I praktično se svećam da sam na polofinaloj večeri možda imao desetak minuta</event>
-			<event start="T155" end="T156"> prostora za samog sebe, pre nego što sam završio, odnosno nakon što sam završio sa medijima</event>
-			<event start="T156" end="T157"> pre nego što sam izašao na scenu. Tako da, kada se sve to završilo...</event>
-			<event start="T157" end="T158"> Meni glavni utisak bio da sam ponosa na sve to da mogu umirati s pavom.</event>
-			<event start="T158" end="T159"> ogroman pritisak i tere te spava sa mene, svi u timu smo bili zadovoljni</event>
-			<event start="T159" end="T160"> porodica i taj neki uži krug ljudi mi je bio prvo povratnih formacija.</event>
-			<event start="T160" end="T161"> A onda kada si sve to završila i kada sam dosjed okopao telefona i kada sam čuo reakcije ostatka ljudi</event>
-			<event start="T161" end="T162"> U šoku sam koji još uvek traje.</event>
-			<event start="T162" end="T163"> Juš malo bih voljela da popričam o Euroviziji. U polufinalu su te pitali da kažeš nešto na vranjanskom dijelektu.</event>
-			<event start="T163" end="T164"> U finalu ako se ne varam da li ćeš posle da odeš na Burlinsku pljeskavicu</event>
-			<event start="T164" end="T165"> Kako si ti to doživeo? Da li kao, jesi li to doživeo kao predrasude?</event>
-			<event start="T165" end="T166"> ili ti te stvari ne smete imati.</event>
-			<event start="T166" end="T167"> Pa znaš koliko ne smetam i ništa tog tipa. Ja, ove...</event>
-			<event start="T167" end="T168"> Preko 20 godina živim u Beogradu, pa mi je prosto taj dijalekt...</event>
-			<event start="T168" end="T169"> posto prirodan jer i muzikom se bavim i sluhisla sam i onda prosto kada živjet u tom okruženju.</event>
-			<event start="T169" end="T170"> Pričate kako pričaju i drugi ljudi, međutim kad god sa svojim prijateljima ili</event>
-			<event start="T170" end="T171"> kasni sporadiću ili prosto nemam pojma ni ja više kad kako da pričam</event>
-			<event start="T171" end="T172"> Kad mi kako dođe filološki fakultet sa studiraju ljudi koji ne znaju da sam bio poliglote pre nego što sam opisavao fakultet.</event>
-			<event start="T172" end="T173"> Ono sam znao da su me šviše dialekte.</event>
-			<event start="T173" end="T174"> Čuđe, dao si norveški. Jel' vranjanski ili norveški? Jel' norveški ima više podežda od vranjanskog?</event>
-			<event start="T174" end="T175"> Paneš, razum se, su njih izdobrali.</event>
-			<event start="T175" end="T176"> Šalom na stranu nikad nisam doživio nikakve predostave od tog tipa gore, ali</event>
-			<event start="T176" end="T177"> ako smatram da je to prizmsko štokalsko narečeo koje mi ovde imamo</event>
-			<event start="T177" end="T178"> a zaslužuju je mnogo više prisutnosti u medijima,</event>
-			<event start="T178" end="T179"> i svi znaju Zuboru Stankovića koji je iz Milosovog najzatvužniji za</event>
-			<event start="T179" end="T180"> za to narečje koje imamo. Tako da, ovaj, kad god imam prilike gore, pričam ja o</event>
-			<event start="T180" end="T181"> evo sad smo skoro snimali praktičnu ženu i ovako napravio sam spisak</event>
-			<event start="T181" end="T182"> gomino nekih vranjanskih izreka i onda sam ljudima prevodio zato što nemaju privike da čuju.</event>
-			<event start="T182" end="T183"> A ono što je meni najupečetljivo bilo kad sam bio baš dete, dede imao izraku kaže Njeknje kad be u lojze za grojze noć parim nogu na tel pa burilo.</event>
-			<event start="T183" end="T185"> I kako to prevodiš svojim prijateljima ili možeš to gledatima da prevesi?</event>
-			<event start="T185" end="T187"> Onomad kad sam bio u Vinogradu po grožđe, natakao sam nogu na žicu pa je otekla.</event>
-			<event start="T187" end="T188"> O to ulače, dakle. Kada govorimo o komentarima, rekli smo još na početku da pesma ima taj istočenjački prijezvuk</event>
-			<event start="T188" end="T189"> Melos, ali kada govorimo o komentarima nakon takmičenja, bilo je i onih poput toga da je etnofazon prevaziđen,</event>
-			<event start="T189" end="T190"> izlizane, naročito za takmičenje tipa Evrovizija.</event>
-			<event start="T190" end="T191"> Takođe, rekli smo i da je reč Habibi bila, koja se pominjuje u tvojoj pesmi, bila upitna, diskutabilna, kako vidiš to, i</event>
-			<event start="T191" end="T192"> rekao si zašto si se odlučio baš za taj fazon, ali me interesuje da li si ciljeno želeo da izvedneš pop pristup</event>
-			<event start="T192" end="T193"> koji je danas i takavako popularan.</event>
-			<event start="T193" end="T194"> Pa zapravo nisam želeo ništa da izbrignem jer smo prosto išli kao onome što nam je u tom trenutku došlo kroz inspiraciju.</event>
-			<event start="T194" end="T195"> stvarno. Jedina ideja je bila da spojimo određene žanrove i prosto nije moguće da se napravi nešto što će baš svakome da se dopade u tom smislu.</event>
-			<event start="T195" end="T196"> Ogromno je osmosko nasledđe u našem narodu generalno.</event>
-			<event start="T196" end="T197"> naručeto na jugo Srbiju, što može da se vidi kroz mnogo turcizama, presvega, koja je imano.</event>
-			<event start="T197" end="T198"> kroz, vi znam, dostoli arhitekturu, kroz dijela i tako dalje.</event>
-			<event start="T198" end="T199"> Tako da ove, to je pre svega bio jedan od razloga zašto smo ih hteli da imamo te neke istočančke prizvuke tu.</event>
-			<event start="T199" end="T200"> jer prosto i priča datira iz doba osmijskog carstva, s druge strane, rečka Bibi je prosto</event>
-			<event start="T200" end="T201"> stavljeno u kontekst same Eurovizije, tog internacionalnog karaktera. Dakle, mi smo išli svesno na priču da Ajoša oslovljamo Sejha Bibi,</event>
-			<event start="T201" end="T202"> jer kada bismo se pojavili na pesme za Euroviziju, to glasuju evropske države, znamo koliko je bilo migracija,</event>
-			<event start="T202" end="T203"> previša arapskog sveta i ljudi sa istoka trenutno u svetu, koje bi im na to bilo prosto zanimljivo da</event>
-			<event start="T203" end="T204"> da čuju. Sa druge strane, prosto reč Khabibi ili bilo koja druga strana reč se već godinama pojavlja i na našem izboru za pesmu za proviziju</event>
-			<event start="T204" end="T205"> imali smo kada su išle Hurricaneke, bilo je Loco ove godine čak i Luka ima pesme na engleskom ima Sao Perović, ima L.P.</event>
-			<event start="T205" end="T206"> Tako da, te internacionalne reči koje se stavljaju u kontekst, ako ima smisla, zaista mislim da je to i pojantan sam Evrovizijama.</event>
-			<event start="T206" end="T207"> Dobro, možda to može da bude adukcija na takvu mirakolnju.</event>
-			<event start="T207" end="T208"> Mislim, objektivno išti na tu reč kao jedan od glavnih aduta za širu narodnu masu Evrope.</event>
-			<event start="T208" end="T209"> da tako kažem. I ne smetram da uvek mora sve da ima neki kontekst zapada, prosto mislim da da</event>
-			<event start="T209" end="T210"> Prosto zanimljiva i drugačija priča u svakom smislu, jer nikada se do sada makar nije desio taj spojstok aj zapada i prosto ogroman je deo našeg kulturnog nasleđa tako kakav je.</event>
-			<event start="T210" end="T211"> I treba to predstaviti ljudima i ne treba se stideti toga.</event>
-			<event start="T211" end="T212"> Nećemo više o komentarima, ali pošto smo se dotakli i njih, šta misliš o tome što se ljudi vežu za tvoj vizualni izgled?</event>
-			<event start="T212" end="T213"> Pa to je veliki plus za moju karijeru, jer prosto kada dobijate toliko komentara da...</event>
-			<event start="T213" end="T214"> i nešto tu upečatljivo. Velika je sreća zato što znam koliko pevača</event>
-			<event start="T214" end="T215"> pokušavaju streme ka nekoj karijeri, ali je prosto teško da se istaknu u nekom</event>
-			<event start="T215" end="T216"> u takvom smislu ako je meni to doprinulo, zahvalim se mi Bogu i narodu na iskreni.</event>
-			<event start="T216" end="T217"> Ja bih sad volila da te ljudi upoznaju u malo drugačijem svetlu,</event>
-			<event start="T217" end="T218"> da kažemo neke stvari o tebi koje, to jeste, da ti kažeš, koje možda nisu toliko poznate,</event>
-			<event start="T218" end="T219"> Rekao si da si studirao norveški jezik.</event>
-			<event start="T219" end="T220"> Reci mi, jesi li nekada bio u Norveškoj ili vidiš otkud je interesovanje prvenstva</event>
-			<event start="T220" end="T221"> za skandinavske jezike. Da li si bio u Norveškoj, da li vidiš sebe tamo, da li bi mogao da živiš tamo, ukoliko jeste?</event>
-			<event start="T221" end="T222"> Ja sam noroški studirao četiri godine na filološkom fakultetu u Beogradu</event>
-			<event start="T222" end="T223"> i prosto nisam želeo to da studiram do poslednjeg trenutka</event>
-			<event start="T223" end="T224"> i htio sam da studerim italijanski. I... Italijanski sam u tom trenutku učio</event>
-			<event start="T224" end="T225"> Išao sam na ekskurziju sa gimnazijom i mišljali smo tada Toskana, Rim i tu predlogu.</event>
-			<event start="T225" end="T226"> i zaljubio sam se i u državu i u sam jezik.</event>
-			<event start="T226" end="T227"> I kada sam došao da upišem sam jezik</event>
-			<event start="T227" end="T228"> ostalo je par mesta na katedri za skandinavistiku i prosto sam mnogo lepih priča čuo u toj katedri.</event>
-			<event start="T228" end="T229"> a pokojni Ljubiša Rajić je ostavio zaista fantastične profesore i uslove da</event>
-			<event start="T229" end="T230"> da stvarno tko to studira bude ponosen u svakom smislu. Tako da sam u poslednjem trenutku odlučio da upišem skanjervistiku.</event>
-			<event start="T230" end="T231"> E onda sam, ne znam, nijakvom čudom odlučio da to budem norveški.</event>
-			<event start="T231" end="T232"> Jednakad sam čuo kako Noruški zvuči prve godine i mislio sam da to nikad neću da naučim.</event>
-			<event start="T232" end="T233"> znači mirim, zvučilo kao da bi jelenjati priču, na iskreni, to je potrebalo jedno 5-6 meseci,</event>
-			<event start="T233" end="T234"> ali kada ste prosto u nekoj materiji i uporni ste u tom, uspećete.</event>
-			<event start="T234" end="T235"> pa makar to bi bio inoroški jezik.</event>
-			<event start="T235" end="T236"> Tako da, nakon studiranja, ja sam pred svega se, naravno muzikom, sve sve vreme bavio paralelno.</event>
-			<event start="T236" end="T237"> Ali prvo obetno sam se bavio marketingom, bio sam u digitalnom marketingu</event>
-			<event start="T237" end="T238"> I na momenu sam čak i vodio agenciju, zato nakon toga na predlog druge sam</event>
-			<event start="T238" end="T239"> počeo da se bavim i predavanjem samog noroškog jezika. Tako da evo sada već 600 godina kako predem noroški jezik...</event>
-			<event start="T239" end="T240"> Otvorio sam relativno skoro i svoju online školu.</event>
-			<event start="T240" end="T241"> Velika je potražnost za noravskim jezikom ljudi širom Balkana.</event>
-			<event start="T241" end="T242"> odlazi gore mahvu mu, potrazi za boljim poslovima,</event>
-			<event start="T242" end="T243"> i tako dalje, tako bliže. Svaki ima neke svoje razlogi i</event>
-			<event start="T243" end="T244"> mnogo ljudi odavde iz ovih prostora je oteštilo za Skandinaviju u devedesetih godina.</event>
-			<event start="T244" end="T245"> Ima tu dosta ispajanja porodice, ima dosta ljudi koji odlaze zbog posta,</event>
-			<event start="T245" end="T246"> zbog neke bolje prilike ili zbog nekih avanturističkih razloga, prosto država, odnosno Norveška, zahteva poznavanje jezika</event>
-			<event start="T246" end="T247"> u tom smislu kako biste dobili boravišnu dozoru morate da imate određeni nivon.</event>
-			<event start="T247" end="T248"> Tako da je to nešto što je meni dalo omogućnost za naslim time da se bavim i da od toga živim, jer mi Norveški je na danas glavni izvor prihoda.</event>
-			<event start="T248" end="T249"> Osim norveškog treniraš i karate, sa koliko godina si počeo da treniraš karate?</event>
-			<event start="T249" end="T250"> Kada sam prvi put počeo da treniram ovde gore, kod gimnaziju,</event>
-			<event start="T250" end="T251"> Ne mogu da se setim čoveku imena, a setim se Nadim, uvek sam ga znao kao po Nadimku.</event>
-			<event start="T251" end="T252"> a jota ili kod jocinog brata,</event>
-			<event start="T252" end="T253"> onda sam bio u kući Karatka dole i kod dikita on je bio iz Bujanovac</event>
-			<event start="T253" end="T254"> Karate klub Vranje i tu mi je bio koren bavljanja bilo kakvim sportom.</event>
-			<event start="T254" end="T255"> I posle smo se preservili za Biograd, nastavio sam da treniram, ušao sam u reprezentaciju i u jednom trenutku</event>
-			<event start="T255" end="T256"> Bio sam prvak države, bio sam drugi na Balkanu, prvak na europskom takmičenju toko da sam se bavio baš dugo i profesionalno time.</event>
-			<event start="T256" end="T257"> I u jednom momentu pubertic je preokrenula stvari i počeo se da se baje o fosiku.</event>
-			<event start="T257" end="T258"> Recimo i čemu te karate naučio i kako si u početku uklapao ta dva muziku i karate jer predpostavljam da je zapravo potrebna disciplina, muzika nekad znači odricanje od te iste discipline.</event>
-			<event start="T258" end="T259"> Pa evo kad sam se karate uratio negde 2017. godine kada je karate po prvi put nakon toliko godina</event>
-			<event start="T259" end="T260"> postao olimpijski sport. I ambiljci su mi se samo probudile u želje da probam da se izborim za to</event>
-			<event start="T260" end="T261"> Pardon. Međutim, tada je muzika već mnogo aktuelna bila deo mog života.</event>
-			<event start="T261" end="T262"> i nisam uspeo baš da izbalansiram to ranije. Mi to išlo zato što prosto</event>
-			<event start="T262" end="T263"> Šta znam, možda sam bio mlađe pa nisam obraćao bažnjem da</event>
-			<event start="T263" end="T264"> na svoj san toliko koliko dana znam da mi spavanje najbitnija stavka</event>
-			<event start="T264" end="T265"> Da li generalno kad imate nastupe, koncerte, vi pre 12 sočinski ne možete da zaspijete, a da se profesionoma bavite nekakvim sportom prosto morate da imate</event>
-			<event start="T265" end="T266"> zdrave navike u smislu da je to prosto, suspojate nekada oko 10-11,</event>
-			<event start="T266" end="T267"> i da ustanete rano. Ja mogu da ustanem i mogu da nastim da treniram, ali mislim da bih mnogo naštetio svom zdravlju.</event>
-			<event start="T267" end="T268"> tako da danas svakako treniram i u teretani imam trenera prosto koji radi stvarno molnje treneri i karate</event>
-			<event start="T268" end="T269"> tako da kombinujemo te dve stvari. Ali tri puta nedeljno mislim da je za neke zdrave navike zaista dovoljno</event>
-			<event start="T269" end="T270"> fizička aktivnost u bilo kojoj sveri posle je neophodna stavka kako biste neki izdunjevenici ili imali prosto</event>
-			<event start="T270" end="T271"> da ne biste, ove, skrenili.</event>
-			<event start="T271" end="T272"> Privatnim životom i psihu. Kaži mi, posle karaktea, u kom momentu shvataš da želiš da se baviš muzikom?</event>
-			<event start="T272" end="T273"> Ja sam shvatio to dok sam se bavio keratom negde pri početku srednje škole.</event>
-			<event start="T273" end="T274"> Mi smo prvo IB napravili u prvom razredu srednje škole.</event>
-			<event start="T274" end="T275"> i tada je to bila ekipa iz šeste gimnazije u koju smo išli i zato se bend zvao Šesta žica.</event>
-			<event start="T275" end="T276"> i to je bio klasičan srednjoškolski bend, gde kad god bismo imali nastupe, cijela gimnazija je bila dolazila da nas sluša,</event>
-			<event start="T276" end="T277"> pa smo pevali uglavnom obrade domaćih i stranih hitova. I negde se 15-16 godina</event>
-			<event start="T277" end="T278"> da sam ušao u muziku u smislu da sam stalo na scenu i imao sam prvi nastup.</event>
-			<event start="T278" end="T279"> Tako da šesta gimnazija je mnoge neke umetnike imala koje su i dan danas pričale</event>
-			<event start="T279" end="T280"> prisutni na sceni, a da prosto samo to ljudi ne znaju i za to mogu da se zahvalim čitavom timu u šestve gimnazije i</event>
-			<event start="T280" end="T281"> svečanoj sali koja postoji tamo gde smo mi mogli da odlazimo i da sviramo i da se zveze na to.</event>
-			<event start="T281" end="T282"> pomenuo si po svoj prvi bend, šest tržica</event>
-			<event start="T282" end="T283"> Imaš i band Sizzip. Kako nastaje Sizzip i šta se trebatovno dešava sa njim</event>
-			<event start="T283" end="T284"> periodu kada ti već počinješ da gradiš neku solo karijer.</event>
-			<event start="T284" end="T285"> Sisi postoje od 2017. Mi smo krenuli praktično neobavezno da sviramo</event>
-			<event start="T285" end="T286"> i ono što je zanimljivo kod Sisi, pa je da je on prvobitno bio kao beatbox</event>
-			<event start="T286" end="T287"> odnosno dečko je ustima proizvodio zvuk koje je bubnjiva.</event>
-			<event start="T287" end="T288"> I onda nakon toga sam placio kusačne gitare, krenuli smo da stvaramo nekakve zanimljive spojeve kojima su ljudi postali zanimljivi,</event>
-			<event start="T288" end="T289"> počeli da nas dele svuda po internetu. A da bi danas taj bend bio mnogo šireg karaktera</event>
-			<event start="T289" end="T290"> U prvom smislu imamo bubnjeve, imamo bas, imamo električnu gitaru, imamo duodručke instrumente, dva vokala.</event>
-			<event start="T290" end="T291"> i Sissip je snimio četiri pesme, odnosno EP, to je skraćena verzija albuma, album je LP, ovo je EP sa tri do četiri pesme, uglavnom zavisi kako to želi da formatira.</event>
-			<event start="T291" end="T292"> ali prosto kako je solo karijera krenula da izlazi na videlo</event>
-			<event start="T292" end="T293"> To je krenulo tačno kako je korona krenula, tako da praktično sa sisi pomili nismo nije da nastupalo.</event>
-			<event start="T293" end="T295"> Ja sam taj period iskoristio da se okrenem nekom svom unutrašnjem biću i detetu da dam njemu ono što mislim da želi.</event>
-			<event start="T295" end="T296"> I u nekom trenutku smo snimili te pesme koje ćemo objaviti sukcesivno jedno po jedno u nekom trenutku u bližoj budućnosti.</event>
-			<event start="T296" end="T297"> Tako da, band je aktivan, aktualan. Trebalo da imamo nastup negde 2021. otvaranja</event>
-			<event start="T297" end="T298"> KST baš sa Ari FM-om i to nam je bilo baš ovo... ...oduševljenje, međutim...</event>
-			<event start="T298" end="T299"> opet su krenuli karantini i čekamo ovo još u pravi trenutak.</event>
-			<event start="T299" end="T300"> Ok, reci mi prvi, prvi bend koji si slušao.</event>
-			<event start="T300" end="T301"> a možda bendovi koji su oticali na to da radiš muziku kakvu u danas stvarš.</event>
-			<event start="T301" end="T302"> Mnogo ljudi tu uticam. Jas sam zajisto od malih novu imao</event>
-			<event start="T302" end="T303"> Privilegiju da slušam raznorazne žanrove.</event>
-			<event start="T303" end="T304"> od Staniša Stošića do, ne znam, između ostalih i Haris Đinović, i Željko Joksimović, i Goca Tržan.</event>
-			<event start="T304" end="T305"> i ex-rock bendove od Planova Valjka, Dibiljih Jagoda, Riblja Čorba itd.</event>
-			<event start="T305" end="T306"> Ono što je meni najveće opažnje okupiralo da se ja zainteresujem zabavljanjem muzikom i isenskim nastupom, jeste grunge scena.</event>
-			<event start="T306" end="T307"> I meni zaujek omenjeni bend Pearl Jam i frontman Eddie Vedder, tako da nisim da kako sam se zaljubio u taj bendi,</event>
-			<event start="T307" end="T308"> kako sam otkrio ko je Edi Veder i počeo da istražujem kroz njegove intervjue ko je čovek, šta nosi</event>
-			<event start="T308" end="T309"> taj posao kojim se on bavi itd. Tako sam počeo da otkrivam i da se interesujem za mnoge neke druge izvodjače i</event>
-			<event start="T309" end="T310"> Tako sam se upoznao sa radom mnogih nekih pevača</event>
-			<event start="T310" end="T311"> mislim, zato što sam se ovoj kole pomenuo. I mislim da je bitno da tako ljudi koji se time bavaju, da slušaju šta drugi ljudi imaju da kažu,</event>
-			<event start="T311" end="T312"> zato što manje više smo svi krvi, ono, svi smo ljudi od krvi i od mesa i sve nas čeka manje više, isto su ubi nas svi možemo da nađemo na iste problemi i stvari.</event>
-			<event start="T312" end="T313"> i bitno je da se čovek ne osjeća sam u svemu tome, tako da Eddie Vedder i Pearl Jam su nešto što</event>
-			<event start="T313" end="T314"> To toj noćte menje makar onovo.</event>
-			<event start="T314" end="T315"> najupečatljivi bilo za početak bavanja musiko. Što se vidi je ka pustim kosoveru, veroća.</event>
-			<event start="T315" end="T316"> Većinu karijere još kao klinično se je sam rekao se proveo u bendovima, bi ipak ti ljudi sad znaju kao princ odvranje.</event>
-			<event start="T316" end="T317"> U kom trenutku si postao svestan toga da</event>
-			<event start="T317" end="T318"> Da želiš da radiš sam ili u kom trenutku si poželeo da radiš sam?</event>
-			<event start="T318" end="T319"> 2020. sam otišao na casting za reklamu za određeni brand i na jedži</event>
-			<event start="T319" end="T320"> I ne dođem na prijatelja koji je isto javno svetoglomac,</event>
-			<event start="T320" end="T321"> Nije me već neko vreme video u tome trenutku primetio da sam pustio u kosu, kaže</event>
-			<event start="T321" end="T322"> pravimo audiciju za svetski muzikal Isus krizi superstar</event>
-			<event start="T322" end="T323"> dođe na audiciju. Vidimo kako će se znaći. Ja odem na audiciju, spremim tu pesmu.</event>
-			<event start="T323" end="T324"> i dobijem u Music uglavnu olugu da igram olugu Isus Elta.</event>
-			<event start="T324" end="T325"> I tamo upoznam mnoge neke ljude koje sam gledao kao deti na malim ekrani.</event>
-			<event start="T325" end="T326"> Strog Filip Žmahir je tu odigrao vrlo vjerojatno najbitniju ulogu u početku moje karijere.</event>
-			<event start="T326" end="T327"> Tako da sam preko Filipa Žmahira dobio preporuku za odlazak na prvi festival.</event>
-			<event start="T327" end="T328"> na Slavijanski bazaru u Belorusiji. I nakon toga su</event>
-			<event start="T328" end="T329"> se meni slag li utisi i da shvatim prosto da je muzika definitivno moj životni poziv i da želim da se bavim solo karijerom i da sam u stanju da</event>
-			<event start="T329" end="T330"> da podnosim taj pritisak, da uživam u svemu tome i da prosto vidim sebe u tome</event>
-			<event start="T330" end="T331"> tome i za 10 i 20 godina i nakon toga su samo krenuli da se nižu razno razne festivali</event>
-			<event start="T331" end="T332"> s obzirom na to da je tada krenula i korona, većina tih festivala je bila online formata, tako da</event>
-			<event start="T332" end="T333"> Bilo je festivala u Italiji, u Španiji, Litvaniji, Maltiji, Bugarskoj</event>
-			<event start="T333" end="T334"> I... Bugarska je zapravo prva velika stvar pa, da... Kada je na festivalima koja se tebi dogodila.</event>
-			<event start="T334" end="T335"> Ja sam od tih online formata učestovao na dva online festivala u Bulgarijskoj</event>
-			<event start="T335" end="T336"> pa je opazio tzv. scout, odnosno osoba koja je zadužena za traženje tako talenta po regionu da ih zaintrigira da dođu da tamo nastupaju.</event>
-			<event start="T336" end="T337"> I ti online festivali su mi dali mogućnost da me neko spazi i za to takmičenje u Bugrsu,</event>
-			<event start="T337" end="T338"> koja je intonacionalna karaktera, takođe taj The Voice ili The Glass. I eto, između ostalog prošle godine sam i fizički imao priliku da odem u Kazakstan na...</event>
-			<event start="T338" end="T339"> To nije hvala.</event>
-			<event start="T339" end="T340"> tradicionalni festival kazachske muzike gde dolaze ljudi širom sveta i pevaju muziku na kazachskom jeziku.</event>
-			<event start="T340" end="T341"> Tako da smo mi svi morali da se takmičemo i to sam zauzao drugom mjestu.</event>
-			<event start="T341" end="T342"> prve bjelacure iz Jerminije koja je stanovao Andžio. Prosto smo ove svi došli da bismo ispoštovali njihovu muziku i mislim</event>
-			<event start="T342" end="T343"> Mislim da je to prelepe stvar, mislim da i nama nedostaje, falem, takve festivali ovde. Mislim, konkretno Vranje koliko ima muzike i ritmova da prosto čovek svakog dana može da pravi festival.</event>
-			<event start="T343" end="T344"> Šta ti je to takmičenje donijelo?</event>
-			<event start="T344" end="T345"> I kakvo iskustvo nosiš odatle? Šta se pone odatle?</event>
-			<event start="T345" end="T346"> Nosim mnogo lepih stvari, pre svega iskustvo na takvim TV formatima koje mi je bilo ključne za pesmu za reviziju jer</event>
-			<event start="T346" end="T347"> Vi ste tu... Ne postoji publika kao takva, postoje treneri, odnosno...</event>
-			<event start="T347" end="T348"> sudije koje su ispred vas i postoje kamere. Dakle nemate pravo na grešku,</event>
-			<event start="T348" end="T349"> ono što uradite iz prvog puta to se snimilo i to ide u eter.</event>
-			<event start="T349" end="T350"> Tako da to iskustvo mnogo doprinulo nekom samom pouzdanju da prosto ja mogu da izađem i pred srpskom publikom</event>
-			<event start="T350" end="T351"> da se prikažem u nekom najboljem izdanju koje mogu da pružim u tom trenutku.</event>
-			<event start="T351" end="T352"> Ali mi je donijelo dosta poznanstava. Imao sam ponudu da srađam sa jednom, odnosno sa njihom najvećim izdavačkom kućom</event>
-			<event start="T352" end="T353"> koji se bavi pop muzikom. I dosta nekih kontakta i mogućnosti</event>
-			<event start="T353" end="T354"> za plasiranje muzike i na bugarsko tržište, tako da...</event>
-			<event start="T354" end="T355"> Otvoreno su mi vrate i eto, nadam se da će biti prilike da uz neku pesmu prosto probamo sreću i tamo kod njih.</event>
-			<event start="T355" end="T356"> Ok, a kada si Euroviziju počeo da doživljavaš, koje je otakmičenje na koje želiš da se prijaviš?</event>
-			<event start="T356" end="T357"> Jel to nekako logičan sled događaja bio posle svih tih online festivala i...</event>
-			<event start="T357" end="T358"> Pa jeste, ja smatram da mi još uvek nemamo dovoljno festivala gde pevači mogu da se prikažu. Eto, pesma za proviziju je naj...</event>
-			<event start="T358" end="T359"> veći festival gde neafirmisani pjevači mogu da privuku pažnju.</event>
-			<event start="T359" end="T360"> Tako da, eto, mislim, ja bih želeo da pozdravim RTS saista za te potezde su ove godine dali</event>
-			<event start="T360" end="T361"> priliku mnogim neafirmisanim ljudima. Vi kao pogledate sad spisak tih ljudi, 98% ljudi su imena za koje nikad niko nije čuvao.</event>
-			<event start="T361" end="T362"> I za mene takođe mnogi, 98% ljudi koji su možda danas moja populika nisu čuli pre toga za mene.</event>
-			<event start="T362" end="T363"> RTS je ozbiljno rizikovao sa tim, ali isto tako je privukao ogromno pažnje</event>
-			<event start="T363" end="T364"> medija, s obzirom na to da, kao što sam rekao, to nikada nije bilo toliko medijsko ispraćeno kao ove godine.</event>
-			<event start="T364" end="T365"> I bilo je dosta tu tako nekih šokantnih cena, možda se šira publiku</event>
-			<event start="T365" end="T366"> ne prolaza kodeženih kandidata u finale i između ostavak i takve reakcije</event>
-			<event start="T366" end="T367"> i na mene i na Luku, tako da je zaista privuklo opažnjeno.</event>
-			<event start="T367" end="T368"> Po mene osim neafirmisane autore, jel misliš da je danas teže ili je lakše da se razlikuješ?</event>
-			<event start="T368" end="T369"> Kako misliš uopšte o sceni, o mladim ljudima koji kreću da rade i koji se upuštaju u taj neki muzički svet?</event>
-			<event start="T369" end="T370"> Mislim da svako ko kreće se bavim mužikom, a da mu je cilj popularnost i novac da je osužen u startu na neku vrstu propasti,</event>
-			<event start="T370" end="T371"> jer prvo neće trajati pretrenom dolgo, da će upasti u deo trenda i da posta deo konzumenske muzike.</event>
-			<event start="T371" end="T372"> Tako da mislim da nikada nije bilo lakše da se neko probije ukoliko zaista ima čiste namere.</event>
-			<event start="T372" end="T373"> ako neko zaista voli to što radi i vidi sebe u tome na duže od par meseci,</event>
-			<event start="T373" end="T374"> Mislim da ima dosta, da tako kažem po znacima navodnika,</event>
-			<event start="T374" end="T375"> praznog prostora, jer prosto dugo si nije pojavio neko poput</event>
-			<event start="T375" end="T376"> Zdravko Čoliće, poput Ošeta Projevskog, poput Željko Joksimovića, poput i nekih imena koji su nam poznati.</event>
-			<event start="T376" end="T377"> u široj javnosti kao velika pop imeni velike pop iz Odjađa.</event>
-			<event start="T377" end="T378"> Smatram da postoji dosta prostora, eto sad je tu u suštini nam izvodjačima da svojim trudom nekako postignemo</event>
-			<event start="T378" end="T379"> da prosto opravdamo da možemo da popunimo te praznimi.</event>
-			<event start="T379" end="T380"> Jer iz tih velikih imena stoji ogroman rad, ogroman trud. Bez toga ne može.</event>
-			<event start="T380" end="T381"> Kako je tvoje mišljenje o tome da li je važno da u startu kada krećeš da radiš nešto,</event>
-			<event start="T381" end="T382"> Ajde pričamo o tome što ti radiš, to je muzika.</event>
-			<event start="T382" end="T383"> da imaš cilj ili da prosto da se prepustiš pa gde te neke vode odnesu i sam tok.</event>
-			<event start="T383" end="T384"> Mislim da svako mora imati neku vrstu cilja.</event>
-			<event start="T384" end="T385"> Jer ja imam cilj da se bavim mužikom, imam cilj da pevam pred</event>
-			<event start="T385" end="T386"> čitavim regionom. Želim da pevam i u Uranju, želim da pevam i u Mariboru</event>
-			<event start="T386" end="T387"> i u Rijeci želim da pejem u Heretice gnom,</event>
-			<event start="T387" end="T388"> da pevam u plovodiju, nebitno mi je željen da se ljudima predstavljam i da pevam, da delim tu energiju.</event>
-			<event start="T388" end="T389"> Tako da samim tim kad imate te ciljeve prosto</event>
-			<event start="T389" end="T390"> put i ide ka tome nekako</event>
-			<event start="T390" end="T391"> Mislim da su te velike stvari samo nagrada truda.</event>
-			<event start="T391" end="T392"> Tako da mislim da kada dođete do velike bine i do tih nekih opštih priznanja,</event>
-			<event start="T392" end="T393"> da iza toga uglavnom stoji trud i da se to nekako nagarda.</event>
-			<event start="T393" end="T394"> Mi smo stvarno uložili ogroman trud, mi smo... Mi smo dosta ne moreli da uzmemo pauzu u dva, tri dana</event>
-			<event start="T394" end="T395"> Ne gledamo jedno drugi koliko smo provodili vremena zajedno, jer smo stvarno šest meseci bavljenja time</event>
-			<event start="T395" end="T396"> svakog dana razmišljanja o tome šta, kako, gde, da li da se promeni aranžman, da li ovo, da li ono,</event>
-			<event start="T396" end="T397"> da li ja to mogu da iznesem. Baš mnogo onih misljenih procesa smo morali da prođemo.</event>
-			<event start="T397" end="T398"> i siguran sam da je to na neki način nagrada.</event>
-			<event start="T398" end="T399"> Stefano, pošto ćemo razgovor, lagano da privodimo kraju.</event>
-			<event start="T399" end="T400"> i pitanjem gledalaca na kraju.</event>
-			<event start="T400" end="T401"> Volelo bi da kažeš nešto o saradnjama, s obzirom na to da smo trenutno u vranju o pesmi Moja lepo vranje.</event>
-			<event start="T401" end="T402"> ko je inicijator toga kako je nastala i još jedna saradnja je meni bila zanimljiva</event>
-			<event start="T402" end="T403"> sa Milanom Seven Dead Baby, ako možeš, o tim sradnjama nešto.</event>
-			<event start="T403" end="T404"> A, ok, priča se moja lepa vranja da se</event>
-			<event start="T404" end="T405"> Ja sam se jednu noć probudio iz sna da sam plakao i moj prvi najbolji prijatelj,</event>
-			<event start="T405" end="T406"> Jarev je bio u tom snu i samo sam ga vidio kako ide i trči iz sokaka u sokak, nemam pojma.</event>
-			<event start="T406" end="T407"> Mislim da je bilo čak jedna kafana, da ne pomenim ime.</event>
-			<event start="T407" end="T408"> I u tom momentu kako sam se probudio u BML App, to preruci, samo sam napisao nekakav tekst</event>
-			<event start="T408" end="T409"> U tom trenutku imao nekog smisla za mene.</event>
-			<event start="T409" end="T410"> i taj tekst je stajao u kompjuturu jedno dve, tri godine.</event>
-			<event start="T410" end="T32"> Nisam znao šta tačno da radim sa njim, jer tad još uvek nisam imao karijeru.</event>
-			<event start="T32" end="T1"> Prosto, ja nisam znao gde ću žan ruski da se pronađem.</event>
-			<event start="T1" end="T41"> I u jednom momentu, to mislim bilo pred karantin, u Vranju sam sa ovom</event>
-			<event start="T41" end="T131"> prijatelju Đorđe Popovića, koga ljudi u ranju poznaju. Mislim da to je on nenormalno talent, on pevač i frontman.</event>
-			<event start="T131" end="T184"> Došao sam kod njega kuće, pošto smo prijatelji zajedno, smo išli ostan u školu dok sam još bio u branju.</event>
-			<event start="T184" end="T186"> Nismo smo bili baš klupa, on mi je bio ispred prvog klupa. I... Predstavio sam mu tekst, njemu se to dopao,</event>
-			<event start="T186" end="T294"> i bukvalno smo za jednu pet do deset minuta napravili tu i melodiju i pesmu. Određene stvari smo korigovali po pet</event>
-			<event start="T294" end="T411"> dao veliki doprinut svemu tome. I onda smo tu pesmu snimili, međutim nije</event>
-			<event start="T411" end="T412"> se objavila zato što je krenula korona i prosto smo htjeli da imamo i nekakav spot koji može da pokrije čitavu tu priču da ljudima</event>
-			<event start="T412" end="T413"> prosto budi vizualno pitko. I kada se korona malo smirila...</event>
-			<event start="T413" end="T414"> Iskoristili smo jedan jesenji dan, čini mi se, u Ranju, gore na</event>
-			<event start="T414" end="T415"> ispred opštine, snimili smo taj spot nas četvorica petorica i</event>
-			<event start="T415" end="T416"> prosto je to iskrena pesma, ljudi su se prepoznali. Mislim da ona priča o tom odlasku</event>
-			<event start="T416" end="T417"> iz svog grada i to se ne veze u nužnost za Vranje već za bilo koje druge grade. Vi kad pogledate Beograd</event>
-			<event start="T417" end="T418"> ruku na srce, verovatno u Beogradu imaju najmanje Beogređani.</event>
-			<event start="T418" end="T419"> Ima mnogo ljudi koji su tu došli sa svih strana, a što u potrezi za, ne znam, boljim životom,</event>
-			<event start="T419" end="T420"> su ambice ili prosto kao što je meni sudbina navela gore. Na neke stvari ne možete prosto nikde utičete.</event>
-			<event start="T420" end="T421"> Tako da mislim da svaki grad može da se pronađe u toj pesmi.</event>
-			<event start="T421" end="T422"> Pako guku koreni.</event>
-			<event start="T422" end="T423"> Među vremenom smo dobili i pitanja gledalca i ima zanimljivosti.</event>
-			<event start="T423" end="T424"> Evo ovako šta kaže prvo pitanje, šta jednom vranjancu muzičaru znači koštana?</event>
-			<event start="T424" end="T425"> pa evo devojku mi ga zovu ko šta ne čeku da</event>
-			<event start="T425" end="T426"> Mislim da je koštana Zbog toga što je tvoja cura ili Da da da da</event>
-			<event start="T426" end="T427"> a po znači mnogo mislim da je koštana likom i delom, umetničkom delu</event>
-			<event start="T427" end="T428"> u svakom smislu i smatram da je u nekom komercijalnom smislu to nije iskorišćeno.</event>
-			<event start="T428" end="T429"> Trebamo da to baš u Beogradu. Imam nastup u Lafajetu sa izmjeno svog prijateljica Minom koji igra u Koštanu.</event>
-			<event start="T429" end="T430"> Tako da, vrlo često pričamo i o tome i konsultiramo se šta kako možete ubaciti</event>
-			<event start="T430" end="T431"> i peva i priča, tako da mislim da koštana može da se tekako iskoristi do ovdje.</event>
-			<event start="T431" end="T432"> Nekog gledalca interesuje koje ti je omiljeno delo Bore Stankovića, ono dovezuje se na prethodno pitanje.</event>
-			<event start="T432" end="T433"> Zauvek nečiste krvi.</event>
-			<event start="T433" end="T434"> Ok, koje stereotipe najviše mrzeš o jugu i južnjacima?</event>
-			<event start="T434" end="T435"> Pa, ne znam kako to da im da verbalizujem,</event>
-			<event start="T435" end="T436"> I onda, u taj moment kada krenete da pričate nekad dialektom da vas ljudi nedoživljavaju</event>
-			<event start="T436" end="T437"> ozbiljno. I daću neku svoju mišljenju, ne znam da li je to istina, ali mislim da</event>
-			<event start="T437" end="T438"> da se to proživimo kroz kinematografiju.</event>
-			<event start="T438" end="T439"> i da su mnogi neki glumci ili glumice koji su</event>
-			<event start="T439" end="T440"> u filmovima pričali južničkim dialektom, uglavnom imali neke karaktere koje su bili tako neozbiljni i da se onda to</event>
-			<event start="T440" end="T441"> nekako prožimo i kroz svatenje južnjalkom narodu.</event>
-			<event start="T441" end="T442"> Ali, generalno, eto to, i kad čujemo vranje, nema laganje, nema predosude prema 100 kg svinja, 200 kg masti, ima predosude, što samo to znaje.</event>
-			<event start="T442" end="T443"> Sljedeće pitanje kaže koji ti je u istoriji omiljeni srpski predstavnik na Euroviziji?</event>
-			<event start="T443" end="T444"> Meni je obiljniji Željko Joksimović jer prosto sam tada</event>
-			<event start="T444" end="T445"> prvi put imao kontakt sa tolikom popularnišu u Srbiji u Eurovizi kao da eto, on je bio premarija Šerifović,</event>
-			<event start="T445" end="T446"> i, mladne moje, nešto što je definitivno ostavilo veliko utjecaja na sve nas.</event>
-			<event start="T446" end="T447"> Mislim da zbog glane moje toliko i pratimo Euroviziju.</event>
-			<event start="T447" end="T448"> Ok, ovo je zanimljivo i komično. Ako se Luke Black uspije će ga menjaš li?</event>
-			<event start="T448" end="T449"> Što ne ušite sigme meni.</event>
-			<event start="T449" end="T450"> Hvala. Hvala vam što ste postavljali pitanja</event>
-			<event start="T450" end="T451"> I nadam se da je Stefan odgovorio.</event>
-			<event start="T451" end="T452"> Kako ste i očekivali, možda niste imali očekivanja,</event>
-			<event start="T452" end="T453"> rekla smo da ćemo da privodimo emisiju u kraju</event>
-			<event start="T453" end="T454"> tvoja karijera je na početku to je jasno, ali šta ti je cilj posle svega što si prošao</event>
-			<event start="T454" end="T455"> Do sada, da li je to možda srpska karijera i inostrana karijera?</event>
-			<event start="T455" end="T456"> hoćeš li žanrovski da se oprubaš u malo drugačijim pravcima nekim.</event>
-			<event start="T456" end="T457"> Dok smo mi ovde trenutno u Beogradu sve već radili na nove pesme,</event>
-			<event start="T457" end="T458"> već smo odredili nekoliko melodija pa ćemo vidjeti u kom smjeru će se ići, tako da negde se treba</event>
-			<event start="T458" end="T459"> da jedan aprila, krajem aprila već li mogu da očekuju nešto novo.</event>
-			<event start="T459" end="T460"> A karijera je tek počela i</event>
-			<event start="T460" end="T461"> I sve što sam radio do sada iz ove perspektive delaju kao nekakva priprema za sve ono što me tek čeka,</event>
-			<event start="T461" end="T462"> psihološka, vokalna, fizička i mislim da sam sada zapravo</event>
-			<event start="T462" end="T463"> preman da izađem pred ljudima i da im ponudim sebe.</event>
-			<event start="T463" end="T464"> Hoćeš li sa Zagrebom da ostanješ strajno tu gde jesi? Da li je taj neki bistročnički melaos i to što ti radeš sad</event>
-			<event start="T464" end="T465"> ono što bi ti nastavio da radiš i u buduće ili prosto ne razmišljaš o tome, o pravo obisilu, o drugim stvarima.</event>
-			<event start="T465" end="T466"> Vranje će uvek biti deo moje muzike. Ne znam da li je nužno baš svake pesme, ali definitivno će biti deo moje muzike</event>
-			<event start="T466" end="T467"> Tradicija će se prožimati kroz moju muziku, a ono u čemu ću ja biti to jeste pop.</event>
-			<event start="T467" end="T468"> I, jeto, prosto muzika kao takva vam daje mnogo neke mogućnosti, tako da videćemo mi</event>
-			<event start="T468" end="T469"> Mislim da kada budem jaču u kom smeru je producent otišao sa pesmom</event>
-			<event start="T469" end="T470"> sada ću i znati zato što bitno je da se ta hemija koja se stvori</event>
-			<event start="T470" end="T471"> stvarate pesmu, bude čista, iskrenut, bez nekih pretranjih dodavanja, okolišanja ili adaptiranja,</event>
-			<event start="T471" end="T472"> bilo čemu ili bilo kome, jer zaista mislim da u muzici najbitnija emocija</event>
-			<event start="T472" end="T473"> ovo je stvar trenda, emocija je jedino koja ostaje.</event>
-			<event start="T473" end="T474"> Jel to može i da bude poruka nekim klinicima koji kreću da se bave muzikom?</event>
-			<event start="T474" end="T475"> Moja poruka će uvek biti ista i sad i za deset godina.</event>
-			<event start="T475" end="T476"> godina, a to je da ljudi budu iskreni prema sebi šta je to što vole da rade.</event>
-			<event start="T476" end="T477"> Kada to osvesta da budu hrabri da to priznaju,</event>
-			<event start="T477" end="T478"> da je samo pitanje vremena kada će se njihov cilj i sve zašte surođenje stvariti.</event>
-			<event start="T478" end="T479"> Stefano, hvala ti puno na izdvojenom vremenu.</event>
-			<event start="T479" end="T480"> i na ovom gostovanju. Južna Vesta ti želi puno uspeha u svemu što budeš radio</event>
-			<event start="T480" end="T481"> u buduće i nadam se da se vidimo i družimo prvom, dvadećom prilikom kada postanemo.</event>
-			<event start="T481" end="T482"> postigaš i veći uspeh možda od ovog.</event>
-			<event start="T482" end="T483"> Hvala tebi.</event>
-			<event start="T483" end="T484"> Hvala tebi, hvala ekipi iza kamera i ne znam koja kamera me trenutno hvata, ali... Aj, ljudi, svako ko je dao glas, želim da mu se od srca zahrojim,</event>
-			<event start="T484" end="T485"> u moj ime i u ime mog tima i zaista to bićemo tu dopradamo sa vašim očekivanjima.</event>
-			<event start="T485" end="T486"> Veliki pozdrav za sve vas.</event>
-			<event start="T486" end="T487"> Vama hvala puno što ste pratili ovu emisiju i hvala vam što pratite Jurnu vesti.</event>
-			<event start="T487" end="T488"> i inoče, moje ime je Milica Dejanović.</event>
+			<event start="T2" end="T0"> Top 10 najboljih krivičkih krivička na svijetu.</event>
+			<event start="T0" end="T3"> Na prvi pogled, streljaša i tekvando nemaju mnogo toga zajedničkog. Međutim, ova dva sporta donela su Srbiji</event>
+			<event start="T3" end="T4"> prethodnih godina brojne medalje iz olimpijskih igara, evropskih i svetskih prvenstava i kupova raznih takmičenja.</event>
+			<event start="T4" end="T5"> Takođe ova dva sporta su u prethodnih dana i nišu donala dosta lepih vesti i tim povodom</event>
+			<event start="T5" end="T6"> su sa mnom u studiju dve sportivskinje, Iva Petrović, takmečarka tekvando klub Asterix. Dobrodošla.</event>
+			<event start="T6" end="T7"> i Ljeljana Tvetković, takmičarka Srdečkog kluba Niš 1.881. Dobro došla.</event>
+			<event start="T7" end="T8"> Mi počet ćemo od tebe, poslednji podatak koji je obradovan i sugrađen,</event>
+			<event start="T8" end="T9"> Generalite Kvandole Srbije, prvo mesto na svetoj listi u kategoriji unirke do 63 kg,</event>
+			<event start="T9" end="T10"> među evropskim takmičarkama. Kako si dočekala tu vest?</event>
+			<event start="T10" end="T11"> U Fardane je došla svetska ranglista za juniore i ja sam jedina u Srbiji koja je prva.</event>
+			<event start="T11" end="T12"> na svetskaranglisti, tako da donekle očekivano, ali drago je da je</event>
+			<event start="T12" end="T13"> konačno to zvaniče, zato što sam ja već tri godine u toj kategoriji do 63 kg</event>
+			<event start="T13" end="T14"> i konačno je došlo na red da ja vodim prvo na svetskom renglistu.</event>
+			<event start="T14" end="T15"> Da, bilo je tu uvek negde vrh, drugo mesto i u mlađim kategorijama, tako da nije nešto strano.</event>
+			<event start="T15" end="T16"> Tako je. U 2020. godine, kada sam bila posljednja godina kadeta, sam bila prva na svetskom ranglisti.</event>
+			<event start="T16" end="T17"> Ali ovo je mnogo veći uspek, pošto je samim tim i teže u juniorima jer su ipak stariji.</event>
+			<event start="T17" end="T18"> Ljeljana Dozić posle prvenstva Srbije, gde je posle dosta godina ekipa niša, ženska ekipa, osvojila prvo mesto.</event>
+			<event start="T18" end="T19"> I to prvi put bez Lidi je Mihajlović u timu. I donala si bronzanu medalju u pojedinačnoj kategoriji. Kako je sve to prošlo?</event>
+			<event start="T19" end="T20"> Pa prošao je zapravo stvarno super. Ja sam druga najmlađa početka.</event>
+			<event start="T20" end="T21"> postoji mlađa osoba od mene i stare osobe od mene u ekipi, Netaneo Pagmović i Sofia Radonjić.</event>
+			<event start="T21" end="T22"> I stvarno smo među najmlađima tamo i baš mi je drago što smo se popeli na postolje u senjorskoj kategoriji</event>
+			<event start="T22" end="T23"> Ili gde su stvarni olimpijici, iskusni strelci, stvarno je sve super bilo. Ali drago mi je što ste se popijale na to prvo mesto,</event>
+			<event start="T23" end="T24"> stvarno nismo uzeli neku medalju kako podinočno tako i ekipno u senjorskoj kategoriji i sve je ispalo baš na gusobu.</event>
+			<event start="T24" end="T25"> Jesu, tvoje, kada ti govorim, su i Ivana Andjušić koja je bila četvrta, Adra Arsović je druga, Aleksandra Harverona je</event>
+			<event start="T25" end="T26"> prva, one isto, New Yorka, tako da ja to znači da za sredaštvo ima budućnost</event>
+			<event start="T26" end="T27"> Ima. Ima.</event>
+			<event start="T27" end="T28"> Dobro, Ivo, tebe je prvenstvo Evrope čeka augusta u Talinu, ali tako,</event>
+			<event start="T28" end="T29"> Imaš nešto pre toga?</event>
+			<event start="T29" end="T30"> Pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa, pa,</event>
+			<event start="T30" end="T31"> je to prvenstvo Evrope koje je utaleno u Estoniji i to je od 24. do 26. augusta.</event>
+			<event start="T31" end="T32"> a umeđu vremena imao međunarodne turnire i sad, to je s tog vikenda, imam državno prvenstvo.</event>
+			<event start="T32" end="T33"> tako da sam i to neki fripremiz evropski prevenstv.</event>
+			<event start="T33" end="T34"> i krajem godine imam evropsku promenu 121. godine, odnosno evropsku 21.</event>
+			<event start="T34" end="T35"> gde se nadam da ću da moram zakaći nekom medalje.</event>
+			<event start="T35" end="T36"> Dobro, znači trenutno si u dva ranga. Starosta, koliko je to, vrši pritisak ili</event>
+			<event start="T36" end="T37"> koliko ti možda ulakšava što opet možeš da se takmičiš i sa iskusnijima i sa nekim koji su u tvojem uzrastu i kategoriji.</event>
+			<event start="T37" end="T38"> Pa pošto sam ja poslednja godina junijora, ja imam pravo da radim i senjore i već sam dva puta radila i mislim da to mnogo vede kod...</event>
+			<event start="T38" end="T39"> iskustva za mene i baš im pomaže, zato što posle upoređujem koliko su juniori ipak malo lakši,</event>
+			<event start="T39" end="T40"> kada je mnogo olakšava za ovo Evropsko prvenstvo.</event>
+			<event start="T40" end="T41"> Ti treba da ideš u Talin, Ljiljana, ti si bila na Evropsko prvestvo.</event>
+			<event start="T41" end="T42"> Odatle, ove se si donela broncnu medalju sa ekipom.</event>
+			<event start="T42" end="T43"> i u podiračnoj kategoriji si bila najbolja od naših strelaca.</event>
+			<event start="T43" end="T44"> Kako je sve to prošlo, kako je bilo iskustvo prvi put na takvom nekom</event>
+			<event start="T44" end="T45"> Pa, to je jednograno iskustvo da kažem. Kada odete na Evropsku, nekako hoćete da uđete u finalne</event>
+			<event start="T45" end="T46"> Kada dođete u finalne, cilj je da idete za medalju. Uvijek je svakom momentu cilj po imeni.</event>
+			<event start="T46" end="T47"> I kada sam videla razumetate po seklonifikacija kao ja sam trebala u...</event>
+			<event start="T47" end="T48"> I onda stvarno i trema me uhvatila i pre final, pre nego da krenemo. Ja sam rekla sa elektorom, rekao je, ja imam tremu.</event>
+			<event start="T48" end="T49"> Kako sad ja to da radim?</event>
+			<event start="T49" end="T50"> Nekako sam pucala, bila sam i sedma, rekao neću da vodim u prvi krug gde ispadnem, Bože, oj!</event>
+			<event start="T50" end="T51"> I na kraju sam završila na četvrto mesto. Zadnjih peti imala sam jedan loš pogodak, pa me je to izbacilo iz oča.</event>
+			<event start="T51" end="T52"> i dalje, ali jako sam srećna što sam i četvrt.</event>
+			<event start="T52" end="T53"> Da, ali sa ekipom je došlo.</event>
+			<event start="T53" end="T54"> Bila smo treća ekipa, borela smo se protiv Nemica. Ulice se dolao 16 po 1 i bila je 14 po 14.</event>
+			<event start="T54" end="T55"> Sada odlučujući i sreće bi bilo na našoj strani i u ispozavnom bronzu.</event>
+			<event start="T55" end="T56"> Ti kao trener imaš jednu od najtrofejnijih sporta i njiša</event>
+			<event start="T56" end="T57"> U svim sportovima učesnici olimpijskih igara, a nekad dašnju strelkinju povremeno možda</event>
+			<event start="T57" end="T58"> dalje izodje na crtu, kako je raditi sa njom i šta od nja možda na O. Lide Mihajlović, naravno.</event>
+			<event start="T58" end="T59"> Šta ne možeš da naučiš i u Streljani, ali i vanje.</event>
+			<event start="T59" end="T60"> Mnogo toga. Nid je super trener i da mogu da zamislim bolje trenera ne bih uspela.</event>
+			<event start="T60" end="T61"> Ona je baš onako kako i meni odgovara, njoj odgovara kako radi sa mnom, baš onako super da kažeš bolje ne postoji.</event>
+			<event start="T61" end="T62"> U klubu Asterix ima dosta mladih takmičara, takmičarke koje su donale dosta brojne medaljika.</event>
+			<event start="T62" end="T63"> kakva je saradnja s njim i koliko ti pomaže, pošto je i u reprezentacijama, tako, on.</event>
+			<event start="T63" end="T64"> Da, trener je pre nekada posla trener kajacog reprezentacije Srbije.</event>
+			<event start="T64" end="T65"> i on je stvarno mnogo ambičan trener i svi ga znaju kao veselu osobu i baš dobro zna da radi sa decom</event>
+			<event start="T65" end="T66"> i rekla sam da ja ambiciram da vas nalažljiv i najveća poduška zato što</event>
+			<event start="T66" end="T67"> Uvek je tu kad treba i u najtežim trenucima i uvek nas vodi kroz najteži.</event>
+			<event start="T67" end="T68"> i van, da kažem, tako mislim i van Stronjača i na njoj, al tako.</event>
+			<event start="T68" end="T69"> Da smatram da ako neko želi uspeh da mora da se radi s trenerom i van</event>
+			<event start="T69" end="T70"> Van sporta naravno, ja njega smatram kao član oporodica.</event>
+			<event start="T70" end="T71"> Kako uskladžuješ školu sa trenizima i takmičenjima, pošto ti je sezona dosta gusta, bogata i opet škola je tu negde?</event>
+			<event start="T71" end="T72"> Pa tako je, ja imam vrlo često dva treninga dnevno, skoro svakog dana i teško plafam u školu.</event>
+			<event start="T72" end="T73"> to uglavnom bude između treninga, ali imam podrašku od profesora, pogledam je kroz prste nekad, tako da gledam da oklopim se.</event>
+			<event start="T73" end="T74"> Kako ti je mide sa školom? Lidija mi je rekao da ti je pustila ovu nedelju da ideš u školu.</event>
+			<event start="T74" end="T75"> Da, prava poslava škola i svi profesori i direktori, svi tamo koji rade, stvarno mi izgleda za susret.</event>
+			<event start="T75" end="T76"> i veoma hvala njima, jer znaju kakav mi je raspored, znaju da sam stvarno sportista i da neću to da se upotrebim.</event>
+			<event start="T76" end="T77"> Imaju odrobno poverenje u mene i stvarno i meni gledaju kroz prste i hvala im stvarno.</event>
+			<event start="T77" end="T78"> Vi imate sad konačno, posle mnogo godina boljih uslova, imate novu strljanu u obitelji.</event>
+			<event start="T78" end="T79"> u kojoj možda se održe i različite takmičenja. Koliko vam to znači? Jer uslovi su verovatno mnogo bolji od one stare streljane gde se pe...</event>
+			<event start="T79" end="T80"> Znači prvo zato što je veronika striljana, ima prostor za stvarno svakog i neko ko ne dođe da trenira, opet ima prostor za njega.</event>
+			<event start="T80" end="T81"> da puca rekreativno. Ne moramo da čekamo jedne i druge da završe</event>
+			<event start="T81" end="T82"> nego možemo, stvarno svi rastanemo, odjedno događamo, sve nekako...</event>
+			<event start="T82" end="T83"> Nije tamno, nije previše svetlo kao što je bio u Staroj Streljani, baš je ono jedno od najboljih u regionu, da kažem.</event>
+			<event start="T83" end="T84"> Kako su vaše uslovi za trening i gde trenirate i spremate se?</event>
+			<event start="T84" end="T85"> Mi imamo baš odlične oslove takođe u sportnom centru Čajer, mi smo pored bazena</event>
+			<event start="T85" end="T86"> Tako da imamo i, pored samo treninga, imamo i omogućen bazen,</event>
+			<event start="T86" end="T87"> saunu i teretanu i stvarno su odlični osnovi.</event>
+			<event start="T87" end="T88"> Dobro, znači taj je jedan od glavnih uslova da vi možete da napreduje su ispunjeni, je li tako?</event>
+			<event start="T88" end="T89"> Da smatram da imamo najbolje uslove među ostalim klubima i Srbiji, zato što nam je praktično sve na jednom mestu.</event>
+			<event start="T89" end="T90"> Da, i u Čajnjiru je, da ga znam, opet je i blizu sve.</event>
+			<event start="T90" end="T91"> Kakvi su ti planovi dalje, osim ovog Evropskog prvenstva koja je ove godine i krajem godine takvičenja, ali generalno planovi u takvom dolu?</event>
+			<event start="T91" end="T92"> Pa moj najveći cilj je zlatno na olimpijskim igrama.</event>
+			<event start="T92" end="T93"> i vola bih da mi se to ostvari. Također bih vola da u senjorima uzem neku evropsku, svetsku medalju.</event>
+			<event start="T93" end="T94"> i da budem planirao prezentaciju senjor.</event>
+			<event start="T94" end="T95"> Lefko, kakve su tvoji planovi, želje sredašće istog olimpijskih sporta?</event>
+			<event start="T95" end="T96"> Pa isto do nešta. Znatno je imfijsku medalju da budem najbolja među seniorima. Do tada želim da se pokažem najbolje u juniorima.</event>
+			<event start="T96" end="T97"> zlatu nam pijat i je glavni cilj.</event>
+			<event start="T97" end="T98"> Da, kakvi su, mislim, strelci kod nas, nažalost, su poznati samo oko takmiđenja, evo,</event>
+			<event start="T98" end="T99"> i oni sa svakog donesu neku</event>
+			<event start="T99" end="T100"> medalje, onda se o njima priča, svi znaju poslu, ali nije toliko popularno. Koliko ti oni...</event>
+			<event start="T100" end="T101"> Generalno mislim sva ta imena i pomognu i na takmičenjima i šta si na prvenstvu bili su tu posle i Mikic na</event>
+			<event start="T101" end="T102"> Prve su Evrope, oni su kasnije došli, da? Da, oni su dva, tri dana došli kasnije.</event>
+			<event start="T102" end="T103"> Sve ih znamo i oni su baš super ljudi. Svi se druže zajedno. Kada kaže neka ekipa</event>
+			<event start="T103" end="T104"> To se slava, mislim, na njih. Oni su baš ta ekipa u kojoj ja želim da budem. Imam i ja</event>
+			<event start="T104" end="T105"> takvu ekipu posle kad ja budem senjor, da budu stvarno izvanredni strelci, da sajednozivamo istu medalje kao i oni</event>
+			<event start="T105" end="T106"> kako pojedinačno takvu miksu i ekipnu, baš onako tim.</event>
+			<event start="T106" end="T107"> Mislim, dva najveće imena, Milica Mandić i Tijena Bogdanović. Imaš sa ostalim borcima saradnju sa seniorima,</event>
+			<event start="T107" end="T108"> već našim alvajnih kontakta sa radnjoj imate. Ima li podrška u takvom dobu?</event>
+			<event start="T108" end="T109"> Pa, generalno ima potraške, ne toliko konkretno njih, pošto još uvek nisam bila član senjorske reprezentacije.</event>
+			<event start="T109" end="T110"> ali i juniorske reprezentacije i SMI kadetske i stvarno je to nešto nevrovatno na tribunama.</event>
+			<event start="T110" end="T111"> Na Eurosupremestva kada čujete toliko navijača i hvala vam da da mnogo podrške i držimo se kao ekipa.</event>
+			<event start="T111" end="T112"> Dobro. Kada si počala se baviti štekom, onda ovo je možda najčešće pitanje zašto me?</event>
+			<event start="T112" end="T113"> Pa počela sam kada sam bila prvi raz do osnovne škole.</event>
+			<event start="T113" end="T114"> I mu je stali brate krenuti kada je posao mi je fjelda,</event>
+			<event start="T114" end="T115"> probam rekreativno i eto, došao sam u ospes i polako.</event>
+			<event start="T115" end="T116"> a vratka koju je ja nastavio</event>
+			<event start="T116" end="T117"> Ni.</event>
+			<event start="T117" end="T118"> A ti streljašto, mislim, ranije su, mislim, bilo u školi streljašto i onda su se deca prebacivala kako si ti došla do streljanja.</event>
+			<event start="T118" end="T119"> Pa, pripomljeno je tato. Moj tata sa firmom ima te neke sportske igre.</event>
+			<event start="T119" end="T1"> I onda ono kao da bi bio za streljaštvo i odvoje mene jednom i kad sam ispalila u diabolom, rekao sam to je to.</event>
+			<event start="T1" end="T120"> I za kraj, šta bi imala da poručiš, da kažem, mlađima?</event>
+			<event start="T120" end="T121"> U Nišu ima gde da se trenira, ima uspeha. Šta bi im preporučao, zašto da izaberu baš tekundo?</event>
+			<event start="T121" end="T122"> Žele bih preporučiti ta kondičnost zato što je vrlo atraktivan sport i volim da prodaju nešto novo.</event>
+			<event start="T122" end="T123"> ne samo futbal, košarku i odbjegu. Zato što je stvarno prelepa veština i</event>
+			<event start="T123" end="T124"> Ne imam nešto, nekakve zamjerke.</event>
+			<event start="T124" end="T125"> Dobro, zašto strađaš to što bi ti rekla? Mladim generacijama.</event>
+			<event start="T125" end="T126"> Pa što kaže Ivo, da stvarno probajem nešto novo.</event>
+			<event start="T126" end="T127"> jer streljaštvo i tekvonto i generalno neki drugi sportovi su manje popularni nego futbal, košarka, odveka. Može mnogo toga da se nauči.</event>
+			<event start="T127" end="T128"> Stvarno, baš je lepo i budovati u zemlji i van zemlje.</event>
+			<event start="T128" end="T129"> I sad kao fol for Svude se putuje.</event>
+			<event start="T129" end="T130"> Da, pa to da kažemo će postiti i deo tradicije kao i folklor u vaši sportovi.</event>
+			<event start="T130" end="T131"> Vamo što ste bila došli u emisiji 15 minuta.</event>
+			<event start="T131" end="T132"> gledali ste emisiju 15 minute ja sam Ljubica Jočić</event>
 		</tier>
 	</basic-body>
 </basic-transcription>
