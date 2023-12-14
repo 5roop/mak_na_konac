@@ -81,26 +81,44 @@ rule pack_asr_into_exb:
         original="data/02_Južne_vesti_asr/{num}/{num}.exb",
         whisper="data/02_Južne_vesti_asr/{num}/{num}.out.whisper",
         whisper_sagic="data/02_Južne_vesti_asr/{num}/{num}.out.whisper_sagic",
-    output: "data/02_Južne_vesti_asr/{num}/{num}_asr.exb"
+        xlsx="data/02_Južne_vesti_asr/{num}/{num}.xlsx"
+    output: 
+        full="data/02_Južne_vesti_asr/{num}/{num}_asr.exb",
+        filtered="data/02_Južne_vesti_asr/{num}/{num}_asr_sample.exb",
     run:
-        from utils import add_results_to_exb
-        from utils import fix_audio_reference
+        from utils import add_results_to_exb, add_results_to_exb_filtered, fix_audio_reference
         fix_audio_reference(input.original)
         add_results_to_exb(
         exb_path=input.original,
         asr_path=input.whisper,
         modelname="whisper",
-        outpath=output[0]
+        outpath=output.full
         )
         add_results_to_exb(
-        exb_path=output[0],
+        exb_path=output.full,
         asr_path=input.whisper_sagic,
         modelname="sagic - whisper",
-        outpath=output[0]
+        outpath=output.full
         )
+
+        add_results_to_exb_filtered(
+        xlsx_path=input.xlsx,
+        exb_path=input.original,
+        asr_path=input.whisper,
+        modelname="whisper",
+        outpath=output.filtered
+        )
+        add_results_to_exb_filtered(
+        xlsx_path=input.xlsx,
+        exb_path=output.filtered,
+        asr_path=input.whisper_sagic,
+        modelname="sagic - whisper",
+        outpath=output.filtered
+        )
+        
 rule gather_asr_outputs:
     default_target: True
-    input: expand("data/02_Južne_vesti_asr/{num}/{num}_asr.exb", num=all_ids)
+    input: expand("data/02_Južne_vesti_asr/{num}/{num}_asr{suffix}", num=all_ids, suffix=[".exb", "_sample.exb"])
     shell:
         """
         cd data;

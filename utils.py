@@ -328,6 +328,73 @@ def add_results_to_exb(
     )
 
 
+
+
+def add_results_to_exb_filtered(
+    exb_path: str, asr_path: str,   xlsx_path: str, modelname: str = "whisper",  outpath: str = ""
+):
+    from transliterate import translit
+    exceldf = parse_excel(xlsx_path)
+    asr = pd.read_csv(asr_path)
+    asr["file"] = asr.file.apply(lambda s: Path(s).with_suffix("").name)
+    asr["file_fragments"] = asr.file.str.split("_")
+    asr["start"] = asr.file_fragments.apply(lambda l: l[0])
+    asr["end"] = asr.file_fragments.apply(lambda l: l[-1])
+    asr["transcript"] = asr.transcript.apply(lambda s: translit(s, "sr", reversed=True))
+    # filtering:
+    merged_asr = asr.merge(exceldf["start end".split()], on=["start", "end"], how="right").drop_duplicates(subset="start end transcript".split(), keep="first").reset_index(drop=True)
+    exb = ET.fromstring(Path(exb_path).read_bytes())
+    timeline_element = exb.find(".//common-timeline")
+    timeline_dict = {
+        tli.get("id"): tli.get("time")
+        for tli in timeline_element.findall(".//tli[@time]")
+    }
+    last_tier = exb.findall(".//{*}tier")[-1]
+
+    new_tier = ET.Element("tier")
+    new_tier.set("id", modelname)
+    # new_tier.set("speaker", last_tier.get("speaker"))
+    new_tier.set("category", "v")
+    new_tier.set("type", "t")
+    new_tier.set("display-name", f"ASR - {modelname}")
+
+    for i, row in merged_asr.iterrows():
+        # if row["start"] == "T129":
+        #     print(i, row, sep="\n")
+        #     pass
+        if row.isna().any():
+            logging.warning(f"Row with NAs found: \n{row}\n\n")
+            continue
+        event = ET.Element("event")
+        event.set("start", row["start"])
+        event.set("end", row["end"])
+        event.text = row["transcript"]
+        new_tier.append(event)
+
+    new_tier[:] = sorted(
+        new_tier, key=lambda child: float(timeline_dict.get(child.get("start")))
+    )
+    i = last_tier.getparent().index(last_tier)
+    last_tier.getparent().insert(i + 1, new_tier)
+    ET.indent(exb, space="\t")
+    exb.getroottree().write(
+        outpath,
+        pretty_print=True,
+        encoding="utf8",
+        xml_declaration='<?xml version="1.0" encoding="UTF-8"?>',
+    )
+    Path(outpath).write_text(
+        Path(outpath)
+        .read_text()
+        .replace(
+            "<?xml version='1.0' encoding='UTF8'?>",
+            '<?xml version="1.0" encoding="UTF-8"?>',
+        )
+    )
+    
+    
+    
+
 def fix_audio_reference(infile: str) -> None:
     exb = ET.fromstring(Path(infile).read_bytes())
     ref = exb.find(".//referenced-file")
