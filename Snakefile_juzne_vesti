@@ -58,7 +58,8 @@ rule perform_asr_whisper:
         model="openai/whisper-large-v3",
         cuda="cuda:2"
     output: "data/02_Južne_vesti_asr/{num}/{num}.out.whisper"
-    conda: "base"
+    conda: 
+        "base"
     script:
         "jvscripts/process.py"
         
