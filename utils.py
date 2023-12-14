@@ -403,6 +403,51 @@ def add_results_to_exb_filtered(
     
     
     
+def fix_220404():
+    raise NotImplementedError("This is currently not implemented, Mira provided updated input files.")
+    from subprocess import run
+    # run("""
+    #     rm data/02_Južne_vesti_asr/220404/segments/*;
+    #     rm data/02_Južne_vesti_asr/220404/*out*;
+    #     rm data/02_Južne_vesti_asr/220404/*_asr*exb;
+    #     rm data/02_Južne_vesti_asr/220404/*_done;
+    #     """, shell=True)
+    exb = ET.fromstring(Path("data/02_Južne_vesti_asr/220404/220404.exb").read_bytes())
+    timeline_element = exb.find(".//common-timeline")
+    timeline_dict = {
+        tli.get("id"): tli.get("time")
+        for tli in timeline_element.findall(".//tli[@time]")
+    }
+    timeline_df = pd.DataFrame({"tli": [i for i in timeline_dict]})
+    timeline_df["time"] = timeline_df.tli.map(timeline_dict)
+    timeline_df["time"] = timeline_df.time.astype(float)
+    timeline_df = timeline_df.sort_values(by="time", ascending=True)
+    timeline_df["start_s"] = timeline_df.time.values
+    timeline_df["end_s"]  = timeline_df.time.shift(-1).values
+    timeline_df["start"] = timeline_df.tli.values
+    timeline_df["end"] = timeline_df.tli.shift(-1).values
+    
+    pairs = timeline_df[["start", "end"]]
+    
+    pairs["is_already_in"] = False
+
+    for i, row in pairs.iterrows():
+        if row.isna().any():
+            continue
+        s = row["start"]
+        e = row["end"]
+        if exb.find(f".//event[@start='{s}'][@end='{e}']"):
+            pairs.loc[i, "is_already_in"] = True
+    
+    pass
+    # ET.indent(exb, space="\t")
+    # exb.getroottree().write(
+    #     "data/02_Južne_vesti_asr/220404/220404.exb",
+    #     pretty_print=True,
+    #     encoding="utf8",
+    #     xml_declaration='<?xml version="1.0" encoding="UTF-8"?>',
+    # )
+
 
 def fix_audio_reference(infile: str) -> None:
     exb = ET.fromstring(Path(infile).read_bytes())
@@ -436,11 +481,13 @@ if __name__ == "__main__":
     # history = process_file_join_and_label(inpath, outpath)
     # inpath = Path(inpath).with_suffix(".xlsx")
     # fix_excel(inpath, "test.xlsx", history)
-    add_results_to_exb_filtered(
-        exb_path="data/02_Južne_vesti_asr/230410/230410.exb",
-        asr_path="data/02_Južne_vesti_asr/230410/230410.out.whisper",
-        xlsx_path="data/02_Južne_vesti_asr/230410/230410.xlsx",
-        modelname="whisper",
-        outpath="test.ext",
-    )
+    # add_results_to_exb_filtered(
+    #     exb_path="data/02_Južne_vesti_asr/230410/230410.exb",
+    #     asr_path="data/02_Južne_vesti_asr/230410/230410.out.whisper",
+    #     xlsx_path="data/02_Južne_vesti_asr/230410/230410.xlsx",
+    #     modelname="whisper",
+    #     outpath="test.ext",
+    # )
     # fix_audio_reference("data/02_Južne_vesti_asr/230313/230313.exb")
+    
+    # fix_220404()
