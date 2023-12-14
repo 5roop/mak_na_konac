@@ -43,3 +43,17 @@ Further work: fix the excel files that now relate to unexisting spans.
 TODO:
 ✓ link the audio properly in Južne Vesti.
 * Weird transliterations:   Яgodini in vanilla (ok, Я is not in Serbian Azbuka, but still), also some weird char in Sagic-v3 -> naught to do here.
+
+
+# 2023-12-14T08:12:44
+
+As suggested by Zürich in an email, a new version will be produced, containing only the selection from the xlsx files.
+
+I found another bug in 230410: we have a row in excel, spanning from T132 to T135, but input exb does not have timestamps for T135:
+```xml
+<tli id="T132" time="797.905467820239"/>
+<tli id="T135"/>
+<tli id="T136"/>
+```
+
+This will be relayed to the team, but I suspect no-one will miss one utterance.
