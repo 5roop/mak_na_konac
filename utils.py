@@ -12,14 +12,23 @@ class FishyInputError(Exception):
     pass
 
 
-def fix_excel(inpath: str, outpath: str, history: list[dict]):
+
+def parse_excel(inpath: str):
     from pandas import read_excel
 
     df = read_excel(inpath)
     if df.shape[1] == 3:
-        raise FishyInputError("There seem to be only 3 columns, expected 4.")
-    if "emisija" not in df.columns:
+        if "start" not in df.columns:
+            df = read_excel(inpath, names="start end govornik".split(), header=None)
+        df["emisija"] = Path(inpath).with_suffix("").name
+    if "start" not in df.columns:
         df = read_excel(inpath, names="emisija start end govornik".split(), header=None)
+    return df
+
+
+def fix_excel(inpath: str, outpath: str, history: list[dict]):
+
+    df = parse_excel(inpath)
 
     for i, row in df.iterrows():
         for mapper in history:
