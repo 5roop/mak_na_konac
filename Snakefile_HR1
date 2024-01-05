@@ -1,0 +1,106 @@
+from pathlib import Path
+import subprocess
+import pandas as pd
+from lxml import etree as ET
+from pydub import AudioSegment
+
+rootdir = "data/03_HR1"
+all_ids = [i.with_suffix("").name for i in Path(rootdir).glob("*.wav") if i.with_suffix(".exb").exists()]
+
+rule gather:
+    input:
+        expand(rootdir+"/{num}_asr.exb", num=all_ids)
+    
+rule process:
+    input: 
+        exb=rootdir+"/{num}.exb",
+        wav=rootdir+"/{num}.wav"
+    output: rootdir+"/{num}_asr.exb"
+    params:
+        model="openai/whisper-large-v3",
+        cuda="cuda:1",
+        language="croatian"
+    run:
+        from pathlib import Path
+        print(Path(input.exb), params.cuda)
+        from utils import fix_audio_reference
+        fix_audio_reference(input.exb)
+        exb = ET.fromstring(Path(input.exb).read_bytes())
+        timeline_element = exb.find(".//common-timeline")
+        timeline_dict = {
+            tli.get("id"): tli.get("time")
+            for tli in timeline_element.findall(".//tli[@time]")
+        }
+        start_indices, end_indices = [], []
+        for event in exb.findall(".//{*}event"):
+            start = event.get("start")
+            end = event.get("end")
+            start_s = float(timeline_dict.get(start))
+            end_s = float(timeline_dict.get(end))
+            start_indices.append(int(start_s*16_000))
+            end_indices.append(int(end_s*16_000))
+        from datasets import Dataset, Audio
+        from transformers.pipelines.pt_utils import KeyDataset
+        ds = Dataset.from_dict({"audio": [input.wav for i in start_indices]}).cast_column(
+            "audio", Audio(sampling_rate=16_000, mono=True)
+        )
+        ds = ds.add_column("start", start_indices).add_column("end", end_indices).map(
+            lambda item: {"audio": {"path": item["audio"]["path"],
+                                    "array": item["audio"]["array"][item["start"]:item["end"]],
+                                    "sampling_rate": item["audio"]["sampling_rate"],
+            }
+        })
+        import torch
+        from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline
+        from pathlib import Path
+
+        device = torch.device(params.cuda if torch.cuda.is_available() else "cpu")
+        torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+        model_id = params.model
+        try:
+            model = AutoModelForSpeechSeq2Seq.from_pretrained(
+                model_id, torch_dtype=torch_dtype, low_cpu_mem_usage=True, use_safetensors=True
+            )
+        except:
+            model = AutoModelForSpeechSeq2Seq.from_pretrained(
+                model_id, torch_dtype=torch_dtype, low_cpu_mem_usage=True, use_safetensors=False
+            )
+        model.to(device)
+        processor = AutoProcessor.from_pretrained(model_id)
+        pipe = pipeline(
+            "automatic-speech-recognition",
+            model=model,
+            tokenizer=processor.tokenizer,
+            feature_extractor=processor.feature_extractor,
+            max_new_tokens=128,
+            chunk_length_s=30,
+            batch_size=16,
+            return_timestamps=True,
+            torch_dtype=torch_dtype,
+            device=device,
+        )
+
+        result = pipe(
+            KeyDataset(ds, "audio"),
+            generate_kwargs={"language": params.language},
+        )
+        transcripts = [i.get("text", "-") for i in result]
+        
+        for event, transcript in zip(exb.findall(".//{*}event"), transcripts):
+            from transliterate import translit
+            event.text = translit(transcript if transcript else "-", "sr", reversed=True)
+        ET.indent(exb, space="\t")
+        exb.getroottree().write(
+            output[0],
+            pretty_print=True,
+            encoding="utf8",
+            xml_declaration='<?xml version="1.0" encoding="UTF-8"?>',
+        )
+        Path(output[0]).write_text(
+            Path(output[0])
+            .read_text()
+            .replace(
+                "<?xml version='1.0' encoding='UTF8'?>",
+                '<?xml version="1.0" encoding="UTF-8"?>',
+            )
+        )
