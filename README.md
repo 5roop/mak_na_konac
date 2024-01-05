@@ -57,3 +57,6 @@ I found another bug in 230410: we have a row in excel, spanning from T132 to T13
 ```
 
 This will be relayed to the team, but I suspect no-one will miss one utterance.
+
+It was discovered the 220404 file was not diarized completely, meaning that I only had about half of the file transcribed.
+Mira provided a new file which sorted it out.
